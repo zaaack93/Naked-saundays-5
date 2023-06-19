@@ -482,8 +482,23 @@
           {%- endif -%}
         </div>
       {%- endif -%}
+
+      {% if product.metafields.theme.preorder %}
+        <button class="btn btn--outline btn--primary custom_button">{{ 'products.product.pre_order' | t }}</button>
+      {% elsif product.available and settings.custom_quickview_enable %}
+        {% render 'custom-add-to-cart' with product: product%}
+      {%elsif product.available == false %}
+        <button id="restock-{{ product.handle }}" class="btn btn--outline btn--primary custom_button">{{ 'products.general.notif_me' | t }}</button>
+      {%endif%}
     </div>
 
     
   </div>
 </div>
+<style>
+  .product-item .btn--primary.btn--outline{
+    --btn-border: {{settings.footer_border_color}};
+    --btn-bg: {{settings.footer_background_color}};
+    --btn-text: {{settings.footer_text_color}};
+  }
+</style>

@@ -688,6 +688,12 @@
         "default": true
       },
       {
+        "type": "checkbox",
+        "id": "custom_quickview_enable",
+        "label": "Enable bottom quick add.",
+        "default": true
+      },
+      {
         "type": "header",
         "content": "Sibling swatches"
       },
@@ -719,6 +725,25 @@
         "id": "product_grid_show_rating",
         "label": "Enable star rating",
         "default": false
+      },
+      {
+        "type": "header",
+        "content": "Footer buttons"
+      },
+      {
+        "type": "color",
+        "id": "footer_background_color",
+        "label": "Footer buttons background"
+      },
+      {
+        "type": "color",
+        "id": "footer_text_color",
+        "label": "Footer buttons text"
+      },
+      {
+        "type": "color",
+        "id": "footer_border_color",
+        "label": "Footer buttons border"
       }
     ]
   },

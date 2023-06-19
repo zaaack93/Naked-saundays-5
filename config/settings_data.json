@@ -48,9 +48,11 @@
     "sale_text_color": "#ff81f5",
     "badge_bg_color": "#ffffff",
     "badge_text_color": "#ff81f5",
-    "quickview_enable": true,
+    "quickview_enable": false,
     "show_cutline": false,
     "product_grid_show_rating": true,
+    "footer_text_color": "#212121",
+    "footer_border_color": "#ff81f5",
     "form_style": "modern",
     "show_labels": true,
     "variant_lines": true,
@@ -82,7 +84,15 @@
     "sale_background_color": "#be563f",
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "11349500561483629931": {
+        "type": "shopify:\/\/apps\/notify-me-back-in-stock-alert\/blocks\/app-embed\/b399b727-6c85-44fc-9e21-63114bd72054",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Clean": {
