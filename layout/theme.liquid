@@ -78,6 +78,8 @@
 
   {{ 'theme.css' | asset_url | stylesheet_tag }}
 
+  {{ 'main.css' | asset_url | stylesheet_tag }}
+
   {% if request.design_mode %}
     {{ 'design-mode.css' | asset_url | stylesheet_tag }}
   {% endif %}
@@ -241,5 +243,13 @@
 
 
   <!-- And above this comment line ================================================== -->
+  <!-- Stamped - Begin script -->
+  <script
+    async
+    type="text/javascript"
+    id="stamped-script-widget"
+    data-api-key="pubkey-6n65E39870som559RFoV43klBKx6xe"
+    src="https://cdn1.stamped.io/files/widget.min.js"></script>
+  <!-- Stamped - End script -->
 </body>
 </html>

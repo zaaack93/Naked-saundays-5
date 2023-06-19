@@ -54,6 +54,15 @@
 
     <div class="product-information">
       <div class="product-item__info">
+        <span 
+          class="stamped-product-reviews-badge" 
+          data-id="{{ product.id }}"
+          data-product-sku="{{ product.handle }}" 
+          data-product-type="{{product.type}}" 
+          data-product-title="{{product.title}}" 
+          style="display:block;">
+          {{product.metafields.stamped.badge}}
+        </span>
         <p class="product-item__title">
           {{ product.title | strip_html }}
         </p>

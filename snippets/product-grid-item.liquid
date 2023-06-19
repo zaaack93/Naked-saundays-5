@@ -216,11 +216,14 @@
       data-aos-duration="{{ aos_duration }}"
       data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.pre_order' | t }}</span>
   {%- elsif on_sale and sold_out == false -%}
+    {% assign sale = product.compare_at_price_max | minus: product.price | divided_by:100 | round %}
+    {%assign amount = sale | times:100 %}
+    {%- capture savings -%}{{ amount | money_without_trailing_zeros }}{%- endcapture -%}
     <span class="sale-box"
       data-aos="fade"
       data-aos-delay="{{ aos_image_delay }}"
       data-aos-duration="{{ aos_duration }}"
-      data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.on_sale' | t }}</span>
+      data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.discount_html' | t: savings: savings }}</span>
   {%- endif -%}
 
   {%- if settings.quickview_enable and current_variant -%}
@@ -388,12 +391,22 @@
   <div class="product-information" data-product-information>
     <div class="product-item__info">
       <a class="product-link" href="{{ product_url }}" aria-label="{{ product.title | strip_html | escape }}" data-product-link="{{ product_url }}">
-        {%- if settings.product_grid_show_rating and product.metafields.reviews.rating.value != blank -%}
-          <div class="product-item__stars">
+        {%- if settings.product_grid_show_rating -%}
+          {% comment %} <div class="product-item__stars">
             {% render 'product-rating', product: product %}
-          </div>
+          </div> {% endcomment %}
+          <!-- Stamped - Begin Star Rating Badge -->
+          <span 
+            class="stamped-product-reviews-badge" 
+            data-id="{{ product.id }}"
+            data-product-sku="{{ product.handle }}" 
+            data-product-type="{{product.type}}" 
+            data-product-title="{{product.title}}" 
+            style="display:block;">
+            {{product.metafields.stamped.badge}}
+            </span>
+        <!-- Stamped - End Star Rating Badge -->
         {%- endif -%}
-
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
 
         <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
@@ -470,5 +483,7 @@
         </div>
       {%- endif -%}
     </div>
+
+    
   </div>
 </div>
