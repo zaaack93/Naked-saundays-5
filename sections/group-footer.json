@@ -1,0 +1,63 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Keep up to date!",
+            "text": "<p>Subscribe to get special offers, free giveaways, and the first dibs on all new products!<\/p>",
+            "show_name": true,
+            "button_text": "Join",
+            "show_arrow": false,
+            "terms": true,
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_social_links": false,
+            "column_width": 33
+          }
+        },
+        "footer-1": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "main-menu",
+            "title": "",
+            "column_width": 33
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/NakedSundays-Logo_MultiColor_1997x_ceace983-9ddf-462c-bb09-e14ad59fac54.png",
+        "logo_image_width": 150,
+        "overlay_opacity": 75,
+        "overlay_color": "#ffffff",
+        "padding_top": 75,
+        "padding_bottom": 30
+      }
+    },
+    "supporting-menu": {
+      "type": "section-supporting-menu",
+      "settings": {
+        "linklist": "",
+        "footer_payment_enable": true,
+        "show_locale_selector": true,
+        "show_currency_selector": false,
+        "type": "currency",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "supporting-menu"
+  ]
+}
