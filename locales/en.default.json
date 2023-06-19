@@ -436,6 +436,7 @@
       "sale_type": "Sale type",
       "pre_order": "Pre-order",
       "on_sale": "SAVE",
+      "discount_html": "Save {{ savings }}",
       "unavailable": "Unavailable",
       "compare_at": "Compare at",
       "unit_price_label": "Unit price",

@@ -50,7 +50,7 @@
     "badge_text_color": "#ff81f5",
     "quickview_enable": true,
     "show_cutline": false,
-    "product_grid_show_rating": false,
+    "product_grid_show_rating": true,
     "form_style": "modern",
     "show_labels": true,
     "variant_lines": true,
