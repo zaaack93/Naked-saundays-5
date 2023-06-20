@@ -694,6 +694,18 @@
         "default": true
       },
       {
+        "type": "checkbox",
+        "id": "custom_notify_me",
+        "label": "Enable Notify me button",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "custom_preorder",
+        "label": "Enable Pre-order me button",
+        "default": true
+      },
+      {
         "type": "header",
         "content": "Sibling swatches"
       },
@@ -744,6 +756,21 @@
         "type": "color",
         "id": "footer_border_color",
         "label": "Footer buttons border"
+      },
+      {
+        "type": "color",
+        "id": "footer_hover_background_color",
+        "label": "On hover buttons background"
+      },
+      {
+        "type": "color",
+        "id": "footer_hover_text_color",
+        "label": "On hover buttons text"
+      },
+      {
+        "type": "color",
+        "id": "footer_hover_border_color",
+        "label": "On hover buttons border"
       }
     ]
   },

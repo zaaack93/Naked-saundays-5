@@ -483,11 +483,11 @@
         </div>
       {%- endif -%}
 
-      {% if product.metafields.theme.preorder %}
+      {% if product.metafields.theme.preorder and settings.custom_preorder %}
         <button class="btn btn--outline btn--primary custom_button">{{ 'products.product.pre_order' | t }}</button>
       {% elsif product.available and settings.custom_quickview_enable %}
         {% render 'custom-add-to-cart' with product: product%}
-      {%elsif product.available == false %}
+      {%elsif product.available == false and settings.custom_notify_me %}
         <button id="restock-{{ product.handle }}" class="btn btn--outline btn--primary custom_button">{{ 'products.general.notif_me' | t }}</button>
       {%endif%}
     </div>
@@ -499,6 +499,10 @@
   .product-item .btn--primary.btn--outline{
     --btn-border: {{settings.footer_border_color}};
     --btn-bg: {{settings.footer_background_color}};
-    --btn-text: {{settings.footer_text_color}};
+    --btn-text: {{settings.footer_text_color}}; 
+    --btn-border-hover: {{settings.footer_hover_border_color}};
+    --btn-bg-hover: {{settings.footer_hover_background_color}};
+    --btn-text-hover: {{settings.footer_hover_text_color}};
+    
   }
 </style>
