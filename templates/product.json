@@ -95,7 +95,7 @@
           "type": "tab_richtext",
           "settings": {
             "show_read_more": false,
-            "style": "tabs",
+            "style": "accordions",
             "title_1": "Tab",
             "raw_content_1": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
             "title_2": "Info",
