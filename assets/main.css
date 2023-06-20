@@ -28,7 +28,7 @@
 .product-item .stamped-badge-caption[data-reviews][data-label][data-version="2"] > span {
   display: none !important;
 }
-.product-item .badge-box, .product-item .sale-box {
+.product-item .badge-box, .product-item .sale-box, .product-item .preorder-box {
   border-radius: 40px;
   right: var(--left-spacing);
   left: inherit;

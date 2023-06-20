@@ -482,13 +482,12 @@
           {%- endif -%}
         </div>
       {%- endif -%}
-
-      {% if product.metafields.theme.preorder and settings.custom_preorder %}
-        <button class="btn btn--outline btn--primary custom_button">{{ 'products.product.pre_order' | t }}</button>
+      {%if product.available == false and settings.custom_notify_me %}
+        <button id="restock-{{ product.handle }}" class="btn btn--outline btn--primary custom_button">{{ 'products.general.notif_me' | t }}</button>
+      {% elsif product.metafields.theme.preorder and settings.custom_preorder %}
+        {% render 'custom-add-to-cart' with product: product%}
       {% elsif product.available and settings.custom_quickview_enable %}
         {% render 'custom-add-to-cart' with product: product%}
-      {%elsif product.available == false and settings.custom_notify_me %}
-        <button id="restock-{{ product.handle }}" class="btn btn--outline btn--primary custom_button">{{ 'products.general.notif_me' | t }}</button>
       {%endif%}
     </div>
 
