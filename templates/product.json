@@ -13,6 +13,12 @@
             "padding_bottom": 8
           }
         },
+        "a846c587-99fa-4f55-a29d-93117976e2cf": {
+          "type": "product_rating",
+          "settings": {
+            "padding_bottom": 8
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -100,6 +106,7 @@
             "raw_content_4": "",
             "title_5": "",
             "raw_content_5": "",
+            "show_product_bundle": true,
             "padding_bottom": 0
           }
         },
@@ -144,6 +151,7 @@
       },
       "block_order": [
         "title",
+        "a846c587-99fa-4f55-a29d-93117976e2cf",
         "price",
         "variants",
         "buttons",
