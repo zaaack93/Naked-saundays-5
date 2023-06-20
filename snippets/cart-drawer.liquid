@@ -526,13 +526,13 @@
               data-animation-duration="{{ animation_duration }}"
               data-animation-delay="{{ animation_delay }}"
               {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}>
-              <button type="submit" name="checkout" class="btn btn--primary btn--solid btn--full cart__checkout">
+              <a href="/cart" name="checkout" class="btn btn--primary btn--solid btn--full cart__checkout">
                 {%- if settings.show_lock_icon -%}
                   {%- render 'animated-icon', filename: 'icon-lock' -%}
                 {%- endif -%}
 
                 {{- 'cart.general.checkout' | t -}}
-              </button>
+              </a>
             </div>
 
             <em class="cart__note"
