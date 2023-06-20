@@ -7,7 +7,7 @@
   <div class="cart__item__image">
     <a href="{{ line_item.url }}" aria-label="{{ line_item.title | escape }}">
       <div class="lazy-image is-loading">
-        {{ line_item.product.images.first | image_url: width: line_item.product.images.first.width | image_tag: sizes: '150px', class: 'is-loading', loading: loading, fetchpriority: fetchpriority }}
+        {{ line_item.product.featured_media.preview_image | image_url: width: line_item.product.featured_media.preview_image.width | image_tag: sizes: '150px', class: 'is-loading', loading: loading, fetchpriority: fetchpriority }}
       </div>
     </a>
   </div>
