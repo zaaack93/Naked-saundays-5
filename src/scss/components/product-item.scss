@@ -1,20 +1,28 @@
+.predictive-search__grid-item.product-item{
+  .stamped-badge-caption{
+    vertical-align: middle;
+    @media only screen and (min-width: 750px){
+      vertical-align: initial !important;
+    }
+  }
+}
+
 .product-item{
-    // .stamped-badge-caption{
-    //   font-size: 0px;
-    //   position: relative;
-    // }
-    // .stamped-badge-caption[data-reviews][data-label][data-version="2"]>span{
-    //   display: none !important;
-    // }
-    // .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
-    //     content: '('attr(data-reviews)') ' !Important;
-    //     font-size: calc(0.9rem * var(--FONT-ADJUST-BODY));
-    //     position: absolute;
-    //     left: 0px;
-    //     @media only screen and (max-width: 749px) {
-    //       position: initial;
-    //     }
-    // }
+    .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
+        content: ')' !Important;
+    }
+    .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:before {
+      content: '(' !Important;
+    }
+    .stamped-badge-caption{
+      vertical-align: middle;
+      @media only screen and (min-width: 750px){
+        vertical-align: top;
+      }
+    }
+    .stamped-badge-caption[data-reviews][data-label][data-version="2"]>span{
+      display: none !important;
+    }
 
 
   .badge-box,.sale-box{
