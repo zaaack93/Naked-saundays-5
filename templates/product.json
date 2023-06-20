@@ -7,8 +7,8 @@
           "type": "title",
           "settings": {
             "subheading_option": "breadcrumb",
-            "show_rating": true,
-            "enable_star_rating": true,
+            "show_rating": false,
+            "enable_star_rating": false,
             "show_rating_count": false,
             "padding_bottom": 8
           }
