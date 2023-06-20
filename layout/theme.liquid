@@ -171,6 +171,7 @@
   <!-- Theme Javascript ============================================================== -->
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script>
 
   {%- if request.design_mode -%}
     <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
@@ -239,8 +240,8 @@
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
   {%- endcomment -%}
   <!-- Paste marketing code or third party scripts below this comment line ============== -->
-
-
+  <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
 
   <!-- And above this comment line ================================================== -->
   <!-- Stamped - Begin script -->
