@@ -1,0 +1,107 @@
+.template-product{
+      //product bundle
+  .product-bundle-container {
+    .accordion-content {
+      padding-top: 10px;
+      padding-bottom: 0px;
+    }
+
+    .cart__item {
+      padding: 0px;
+      border-bottom: none;
+      margin-bottom: 26px;
+
+      .cart__item__image {
+        img {
+          margin: 0px;
+        }
+      }
+
+      .cart__item__content {
+        padding-right: 0px;
+        padding-left: 39px;
+        width: calc(100% - 150px);
+      }
+
+      .cart__item__title {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        //font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+
+        a {
+          text-decoration: none;
+          background: none;
+          padding: 0px;
+        }
+      }
+
+      .short_description {
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        margin: 0px;
+      }
+
+      .cart__item__meta {
+        .cart__item__selected-options {
+          font-family: inherit;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18px;
+          color: #000000;
+        }
+        margin-top: 0px;
+        margin-bottom: 10px;
+        p {
+          margin: 0px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 749px) {
+      .cart__item {
+        margin-bottom: 16px;
+        .cart__item__image {
+          img {
+            width: 120px;
+          }
+        }
+
+        .cart__item__content {
+          padding-right: 0px;
+          padding-left: 19px;
+          width: calc(100% - 120px);
+        }
+
+        .cart__item__title {
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 9px;
+        }
+
+        .cart__item__meta {
+          .cart__item__selected-options {
+            font-size: 12px;
+            line-height: 16px;
+          }
+          margin-bottom: 9px;
+        }
+
+        .short_description {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
