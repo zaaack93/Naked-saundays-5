@@ -484,7 +484,7 @@
       {%- endif -%}
       {%if product.available == false and settings.custom_notify_me %}
         <button id="restock-{{ product.handle }}" class="btn btn--outline btn--primary custom_button">{{ 'products.general.notif_me' | t }}</button>
-      {% elsif product.metafields.theme.preorder and settings.custom_preorder %}
+      {% elsif product.metafields.theme.preorder and settings.custom_preorder and product.available and product.tags contains '_preorder'  %}
         {% render 'custom-add-to-cart' with product: product%}
       {% elsif product.available and settings.custom_quickview_enable %}
         {% render 'custom-add-to-cart' with product: product%}
