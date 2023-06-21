@@ -7,9 +7,15 @@
           "type": "title",
           "settings": {
             "subheading_option": "breadcrumb",
-            "show_rating": true,
-            "enable_star_rating": true,
+            "show_rating": false,
+            "enable_star_rating": false,
             "show_rating_count": false,
+            "padding_bottom": 8
+          }
+        },
+        "80f36bb1-cfc0-4d06-af93-da626fa35e70": {
+          "type": "product_rating",
+          "settings": {
             "padding_bottom": 8
           }
         },
@@ -112,6 +118,7 @@
             "raw_content_4": "",
             "title_5": "",
             "raw_content_5": "",
+            "show_product_bundle": true,
             "padding_bottom": 0
           }
         },
@@ -156,6 +163,7 @@
       },
       "block_order": [
         "title",
+        "80f36bb1-cfc0-4d06-af93-da626fa35e70",
         "price",
         "variants",
         "buttons",
