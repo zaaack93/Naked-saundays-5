@@ -7,7 +7,7 @@
   }
 }
 
-.product-item{
+.product-item:not(.product-item--featured){
     .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
         content: ')' !Important;
     }
