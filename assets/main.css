@@ -154,6 +154,9 @@
   }
 }
 
+.template-cart div[content-gift-product] {
+  width: 100%;
+}
 .template-cart .header__mobile__bottom,
 .template-cart .free-shipping {
   display: none;
@@ -290,6 +293,10 @@
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
   margin-top: 7px;
+}
+
+.cart__items .cart__item[data-gift-item] .cart__quantity, .drawer__items .cart__item[data-gift-item] .cart__quantity {
+  opacity: 0;
 }
 
 .hide {

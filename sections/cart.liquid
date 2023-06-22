@@ -241,6 +241,7 @@
           {%- assign giftcollection = collections[section.settings.collection] -%}
           {%- assign gift_products = giftcollection.products | where: "available" -%}
           {% if gift_products.size > 0 %}
+          <div content-gift-product>
           <div class="free_gift_message {% if subtotal >= freegiftlimit %}hide{% endif %}" data-cart-free-message>
             <div class="message-bg">Spend <span id="remaining-amount">{{ freegiftlimit | minus: subtotal | money}}</span> more to qualify for your free gift!</div>
           </div>
@@ -278,6 +279,7 @@
                 {% endif %}
               </div> 
             </div>
+          </div>
           </div>
           {% endif %}
           {% endif %}

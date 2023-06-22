@@ -1,4 +1,7 @@
 .template-cart {
+    div[content-gift-product]{
+      width: 100%;
+    }
     .header__mobile__bottom,
     .free-shipping {
       display: none;
@@ -153,3 +156,10 @@
         }
       }
   }  
+  .cart__items,.drawer__items{
+    .cart__item[data-gift-item]{
+      .cart__quantity{
+        opacity: 0;
+      }
+    }
+  }
