@@ -37,7 +37,7 @@
           "type": "buttons",
           "settings": {
             "show_quantity": true,
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": false,
             "padding_bottom": 32
           }
@@ -174,7 +174,7 @@
         "enable_zoom": true,
         "enable_video_looping": false,
         "mobile_image_style": "thumbs",
-        "padding_top": 90,
+        "padding_top": 40,
         "padding_bottom": 30
       }
     },
