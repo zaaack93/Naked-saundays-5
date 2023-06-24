@@ -967,6 +967,28 @@
         "label": "Menu",
         "default": "main-menu",
         "info": "This menu won't show dropdown items."
+      },
+      {
+        "type": "header",
+        "content": "Free gift cart"
+      },
+      {	
+      "type": "checkbox",	
+      "id": "enable_freegift",	
+      "label": "Enable Free gift",	
+      "default": true	
+      },
+      {	
+        "type": "text",	
+        "id": "free_gift_limit",	
+        "label": "Minimum spend for free gift",	
+        "default": "50",	
+        "info": "Use round numbers. Exclude currency, symbols, and letters."	
+      },
+      {
+        "id": "collection",
+        "type": "collection",
+        "label": "Free Gift Collection"
       }
     ]
   },

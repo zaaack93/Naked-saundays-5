@@ -234,11 +234,11 @@
         </div>
 
         {% comment %} cart gift begin {% endcomment %}
-        {%- assign freegiftlimit = section.settings.free_gift_limit | times: 100 -%}
+        {%- assign freegiftlimit = settings.free_gift_limit | times: 100 -%}
         {%- assign subtotal = cart.total_price | plus: 0 -%}
-        {% if cart_items_size > 0 and section.settings.enable_freegift %}
+        {% if cart_items_size > 0 and settings.enable_freegift %}
           
-          {%- assign giftcollection = collections[section.settings.collection] -%}
+          {%- assign giftcollection = collections[settings.collection] -%}
           {%- assign gift_products = giftcollection.products | where: "available" -%}
           {% if gift_products.size > 0 %}
           <div content-gift-product>
@@ -246,7 +246,7 @@
             <div class="message-bg">Spend <span id="remaining-amount">{{ freegiftlimit | minus: subtotal | money}}</span> more to qualify for your free gift!</div>
           </div>
           
-          <div class="free_gift_product {% if subtotal <= freegiftlimit %}hide{% endif %}" data-cart-free-product>
+          <div class="free_gift_product {% if subtotal < freegiftlimit %}hide{% endif %}" data-cart-free-product>
             {% assign productsHandlesInCart  = ''%}
                 
             {% for item in cart.items %}
@@ -747,24 +747,6 @@
     {	
       "type": "header",	
       "content": "Free shipping message"	
-    },	
-    {	
-      "type": "checkbox",	
-      "id": "enable_freegift",	
-      "label": "Enable Free gift",	
-      "default": true	
-    },	
-    {	
-      "type": "text",	
-      "id": "free_gift_limit",	
-      "label": "Minimum spend for free gift",	
-      "default": "50",	
-      "info": "Use round numbers. Exclude currency, symbols, and letters."	
-    },
-    {
-      "id": "collection",
-      "type": "collection",
-      "label": "Free Gift Collection"
     }
   ],
   "blocks": [

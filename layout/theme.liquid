@@ -151,6 +151,8 @@
       moneyWithoutCurrencyFormat: {{ shop.money_format | json }},
       moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
       subtotal: {{ cart.items_subtotal_price | json }},
+      free_gift_limit : {{ settings.free_gift_limit | times: 100 }},
+      enable_freegift : {{ settings.enable_freegift }},
       info: {
         name: 'broadcast'
       },
