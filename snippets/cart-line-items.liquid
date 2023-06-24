@@ -31,8 +31,9 @@
   -%}
 
   {%- capture cart_line_item -%}
+  {%- assign property_first_char = p.first | slice: 0 -%}
     <div class="cart__item{% if forloop.last %} cart__item--no-border{% endif %}"
-      {% if line_item.product.tags contains 'free-gift' %} data-gift-item {%endif%}
+      {%- for p in line_item.properties -%}{% if p contains 'isGiftProduct' %} data-gift-item {%endif%}{%endfor%}
       data-item="{{ line_item.key }}"
       data-item-index="{{ forloop.index }}"
       data-item-title="{{- line_item.title | strip_html -}}"
@@ -83,7 +84,7 @@
                   {%- else -%}
                     {%- capture properties_html -%}
                       {{ properties_html }}
-
+                      {% unless p contains 'isGiftProduct' %}
                       <p class="cart__item__property">
                         <strong>{{ p.first }}: </strong>
 
@@ -95,6 +96,7 @@
                           {%- endif -%}
                         </span>
                       </p>
+                      {%endunless%}
                     {%- endcapture -%}
                   {%- endif -%}
                 {%- endif -%}

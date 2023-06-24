@@ -81,7 +81,10 @@ function addToCartJS(qty, variantID) {
   };
   var data = JSON.stringify({
     quantity: qty,
-    id: variantID
+    id: variantID,
+    properties: {
+      'isGiftProduct': 'true'
+    }
   });
   xhr.send(data);
 }

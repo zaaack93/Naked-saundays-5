@@ -250,9 +250,11 @@
             {% assign productsHandlesInCart  = ''%}
                 
             {% for item in cart.items %}
-              {% if item.product.tags contains 'free-gift' %}
-                {% assign isGiftAdded  = true %}
-              {% endif %}
+              {%- for p in item.properties -%}
+                {% if p contains 'isGiftProduct' %}
+                  {% assign isGiftAdded  = true %}
+                {%endif%}
+              {%endfor%}
               {% assign productsHandlesInCart = productsHandlesInCart | append : "," | append : item.product.handle %}
             {% endfor %}
             {% if isGiftAdded == true %}

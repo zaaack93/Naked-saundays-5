@@ -81,6 +81,8 @@ $(document).on("click", ".ajax-add-to-cart", function () {
         location.reload();
       }
     };
-    var data = JSON.stringify({ quantity: qty, id: variantID });
+    var data = JSON.stringify({ quantity: qty, id: variantID,properties: {
+      'isGiftProduct': 'true'
+    } });
     xhr.send(data);
   }
