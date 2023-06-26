@@ -71,18 +71,20 @@ $(document).on("click", ".ajax-add-to-cart", function () {
   }
   
   function addToCartJS(qty, variantID) {
-    var xhr = new XMLHttpRequest();
-    var url = "/cart/add.js";
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        var parsedState = JSON.parse(xhr.responseText);
-        location.reload();
-      }
-    };
-    var data = JSON.stringify({ quantity: qty, id: variantID,properties: {
+    var data = { quantity: qty, id: variantID,properties: {
       'isGiftProduct': 'true'
-    } });
-    xhr.send(data);
+    } };
+
+    $.ajax({
+      type: "POST",
+      url: "/cart/add.js",
+      data,
+      dataType: "json",
+      success: function (cart) {
+        location.reload();
+      },
+      error: function (err) {
+        console.log(err)
+      },
+    });
   }

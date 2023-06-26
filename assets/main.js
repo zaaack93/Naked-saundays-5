@@ -69,24 +69,25 @@ if ($(".cart__inner").length > 0) {
   });
 }
 function addToCartJS(qty, variantID) {
-  var xhr = new XMLHttpRequest();
-  var url = "/cart/add.js";
-  xhr.open("POST", url, true);
-  xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      var parsedState = JSON.parse(xhr.responseText);
-      location.reload();
-    }
-  };
-  var data = JSON.stringify({
+  var data = {
     quantity: qty,
     id: variantID,
     properties: {
       'isGiftProduct': 'true'
     }
+  };
+  $.ajax({
+    type: "POST",
+    url: "/cart/add.js",
+    data: data,
+    dataType: "json",
+    success: function success(cart) {
+      location.reload();
+    },
+    error: function error(err) {
+      console.log(err);
+    }
   });
-  xhr.send(data);
 }
 
 /***/ }),
