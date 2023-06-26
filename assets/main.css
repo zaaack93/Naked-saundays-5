@@ -32,6 +32,7 @@
   border-radius: 40px;
   right: var(--left-spacing);
   left: inherit;
+  font-weight: bolder;
 }
 .product-item:not(.product-item--featured) .product-item__info {
   display: grid;

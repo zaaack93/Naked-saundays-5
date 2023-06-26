@@ -70,6 +70,7 @@
     "message": "You are ||amount|| away from free shipping.",
     "free_shipping_limit": "49",
     "free_shipping_gradient": "linear-gradient(129deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
+    "cart_custom_message_text": "",
     "collection": "free-gift",
     "link_hover_color": "#bcb2a8",
     "header_link_hover": "#AB8C52",
