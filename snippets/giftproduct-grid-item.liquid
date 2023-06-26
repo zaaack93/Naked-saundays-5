@@ -257,7 +257,7 @@
     
     <div class="product_add">
        {%- assign variant = product.selected_or_first_available_variant -%}
-      <button class="add-btn-text btn btn--full btn--primary btn--solid ajax-add-to-cart {% if isProductInCart %} isTheCurrentProduct {% endif %} {% if isGiftAdded %}disabled{% endif %}" data-variantid="{{variant.id}}">{% if isProductInCart %}Remove{% else %}Add to cart{% endif %}</button>
+      <span class="add-btn-text btn btn--full btn--primary btn--solid ajax-add-to-cart {% if isProductInCart %} isTheCurrentProduct {% endif %} {% if isGiftAdded %}disabled{% endif %}" data-variantid="{{variant.id}}">{% if isProductInCart %}Remove{% else %}Add to cart{% endif %}</span>
     </div>
      
   </div>
