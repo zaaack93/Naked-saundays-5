@@ -161,9 +161,6 @@
 .template-cart .free-shipping {
   display: none;
 }
-.template-cart .free_gift_message {
-  margin-top: 20px;
-}
 .template-cart .free_gift_product {
   width: 100%;
   margin-top: 20px;
@@ -246,16 +243,24 @@
   margin-top: 10px;
   display: block;
   cursor: pointer;
+  --BTN-PRIMARY-BG-COLOR: #f2a6df;
+  --BTN-PRIMARY-BG-COLOR-BRIGHTER: #fface4;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
 .template-cart .free_gift_product .gift_product .product-grid .product-item .product-information .product_add .btn.disabled {
+  color: #888;
+  background: transparent;
+  border: 1px solid #dadada;
   cursor: not-allowed;
   pointer-events: none;
-  opacity: 0.5;
 }
 .template-cart .free_gift_product .gift_product .product-grid .product-item .product-information .product_add .btn.isTheCurrentProduct {
   cursor: pointer;
   pointer-events: initial;
-  opacity: 1;
 }
 .template-cart .free_gift_product .btn-wrap {
   width: 100%;
