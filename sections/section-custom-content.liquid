@@ -1,3 +1,11 @@
+{% assign isFind = false%}
+
+{%for block in section.blocks%}
+  {% if block.settings.image!=blank or block.settings.title!=blank or block.settings.description!=blank or block.settings.text!=blank or block.settings.video!=blank  %}
+    {% assign isFind = true%}
+  {%endif%}
+{%endfor%}
+
 {%- liquid
   assign desktop_height = section.settings.height
   assign mobile_height = section.settings.mobile_height
@@ -32,7 +40,7 @@
     --PB: {{ section.settings.padding_bottom }}px;
   }
 {%- endstyle -%}
-
+{%if isFind %}
 <section id="BrickSection--{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="custom-content"
@@ -181,6 +189,7 @@
     {%- render 'no-blocks' -%}
   {%- endif -%}
 </section>
+{%endif%}
 
 {% schema %}
 {
