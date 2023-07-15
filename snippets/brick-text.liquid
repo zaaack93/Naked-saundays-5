@@ -39,7 +39,7 @@
   {%- endunless -%}
 {%- endcapture -%}
 
-<div class="brick__block frame__item"{% if style != blank %} style="{{ style }}"{% endif %} data-prevent-transparent-header {{ block.shopify_attributes }}>
+<div class="brick__block brick__block--text frame__item"{% if style != blank %} style="{{ style }}"{% endif %} data-prevent-transparent-header {{ block.shopify_attributes }}>
   <div class="brick__block__text{{ padding_class }}" data-overflow-frame>
     <div class="brick__block__text__inner" data-overflow-content>
       <div class="hero__content hero__content--compact {{ block.settings.align_text }}">
