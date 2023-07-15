@@ -414,7 +414,13 @@
 
   {%- if block.settings.title != blank -%}
     <div class="product__icon__text" data-aos="fade" data-aos-duration="500">
-      <p>{{ block.settings.title }}</p>
+      {% capture afterpay_logo %}{% render 'afterpay-logo' %}{% endcapture %}
+      {% capture zippay_logo %}{% render 'zippay-logo' %}{% endcapture %}
+
+
+      {% assign title = block.settings.title | replace: 'Afterpay', afterpay_logo | replace: 'ZipPay', zippay_logo %}
+
+      <p>{{ title }}</p>
     </div>
   {%- endif -%}
 </div>

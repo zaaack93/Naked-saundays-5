@@ -87,6 +87,32 @@
   border-color: #E1DEF9;
   /* add any other styles you want for the active state */
 }
+.template-product .product__icon__row .product__icon__container--half {
+  flex: 0 0 49%;
+  max-width: 49%;
+}
+.template-product .product__icon__row .product__icon__container--half .product__icon__text p {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+.template-product .product__icon__row .product__icon__container--half .product__icon__text p span.zippay_logo {
+  width: 60px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.template-product .product__icon__row .product__icon__container--half .product__icon__text p span.aftepay_logo {
+  width: 70px;
+  height: 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .template-product .product-bundle-container .accordion-content {
   padding-top: 10px;
   padding-bottom: 0px;

@@ -18,6 +18,37 @@
       }
     }
   }
+
+  //icon with  text
+  .product__icon__row{
+    .product__icon__container--half{
+      flex: 0 0 49%;
+      max-width: 49%;
+      .product__icon__text {
+        p{
+          display: flex;
+          align-items: center;
+          column-gap: 9px;
+          flex-wrap: wrap;
+          margin-top: 0px;
+          span.zippay_logo{
+            width: 60px;
+            height: 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          span.aftepay_logo{
+            width: 70px;
+            height: 13px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
       //product bundle
   .product-bundle-container {
     .accordion-content {
