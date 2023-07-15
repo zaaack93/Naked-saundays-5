@@ -1,7 +1,7 @@
 {% assign isFind = false%}
 
 {%for block in section.blocks%}
-  {% if block.settings.image!=blank or block.settings.title!=blank or block.settings.description!=blank or block.settings.text!=blank or block.settings.video!=blank  %}
+  {% if block.settings.image!=blank or block.settings.title!=blank or block.settings.description!=blank or block.settings.text!=blank or block.settings.video!=blank or block.settings.external_video_url_metafield!=blank  %}
     {% assign isFind = true%}
   {%endif%}
 {%endfor%}
@@ -126,7 +126,7 @@
           {%- when 'video' -%}
             <div class="brick__block frame__item {{ text_color_class }} {{ desktop_height }} {{ mobile_height }}"{% if style != blank %} style="{{ style }}"{% endif %} {{ block.shopify_attributes }}>
               <div class="brick__block__video frame wide-image">
-                {%- render 'video' section: block, desktop_height: desktop_height, mobile_height: mobile_height, block_element: true -%}
+                {%- render 'video' section: block, desktop_height: desktop_height, mobile_height: mobile_height, block_element: true,external_video_url_metafield:block.settings.external_video_url_metafield -%}
               </div>
             </div>
           {%- when 'collection' -%}
@@ -883,6 +883,12 @@
           "type": "video",
           "id": "video",
           "label": "Video"
+        },
+        {
+          "type": "url",
+          "id": "external_video_url_metafield",
+          "label": "External video link",
+          "info":"Use this option if you want to add a video through metafield"
         },
         {
           "type": "header",

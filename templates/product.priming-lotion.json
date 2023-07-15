@@ -215,6 +215,7 @@
           "type": "video",
           "settings": {
             "video": "shopify:\/\/files\/videos\/Glow Balm Duo.MOV",
+            "external_video_url_metafield": "{{ product.metafields.custom.external_video_url_metafield.value }}",
             "show_video_popup": false,
             "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "overlay_opacity": 0,

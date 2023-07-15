@@ -160,7 +160,13 @@
       </div>
       <div class="video__player is-loading" data-video-player data-video-id="{{ section.id }}-video-background">
         <template data-video-template>
-          {{ video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+          {% if external_video_url_metafield != blank%}
+            {% assign video_id = external_video_url_metafield | split: "watch?v=" %}
+            <iframe src="https://www.youtube.com/embed/{{video_id.last}}?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist={{video_id.last}}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+          {%else%}
+            {{ video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+          {%endif%}
+          
         </template>
       </div>
     </div>
