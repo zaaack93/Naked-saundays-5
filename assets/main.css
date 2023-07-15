@@ -77,6 +77,11 @@
     top: 0px;
   }
 }
+.template-product .product__page .radio__button input[type=radio]:checked + label {
+  background: #E1DEF9;
+  border-color: #E1DEF9;
+  /* add any other styles you want for the active state */
+}
 .template-product .product-bundle-container .accordion-content {
   padding-top: 10px;
   padding-bottom: 0px;

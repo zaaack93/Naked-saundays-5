@@ -8,6 +8,15 @@
         top: 0px;
       }
     }
+
+    //highlight label selected css
+  .radio__button {
+      input[type="radio"]:checked + label {
+        background: #E1DEF9;
+        border-color: #E1DEF9;
+        /* add any other styles you want for the active state */
+      }
+    }
   }
       //product bundle
   .product-bundle-container {
