@@ -42,7 +42,7 @@
         "logo": "shopify:\/\/shop_images\/NakedSundays-Logo_MultiColor_1997x_ceace983-9ddf-462c-bb09-e14ad59fac54.png",
         "logo_max_limit": 120,
         "main_menu_linklist": "",
-        "enable_search": true,
+        "enable_search": false,
         "show_social_icons": true,
         "show_locale_selector": true,
         "show_currency_selector": true,

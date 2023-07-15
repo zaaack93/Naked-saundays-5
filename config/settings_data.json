@@ -26,7 +26,7 @@
     "type_nav_size": 90,
     "type_nav_caps": true,
     "btn_font": "avenir_next_n4",
-    "btn_border_style": "square",
+    "btn_border_style": "pill",
     "btn_primary_bg_color": "#edb3ff",
     "btn_primary_text_color": "#ffffff",
     "btn_primary_border_color": "#212121",

@@ -19,6 +19,14 @@
             "padding_bottom": 8
           }
         },
+        "b428f661-7cb4-4d6b-b61f-f2b5b9130d28": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p><em>Infused with Kakadu Plum, Vegan Collagen and Mineral Filters. For sensitive skin and everyday use! <\/em><\/p>",
+            "padding_bottom": 16
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -39,16 +47,56 @@
             "show_quantity": true,
             "show_payment_button": true,
             "show_gift_card_recipient": false,
-            "padding_bottom": 32
+            "padding_bottom": 14
+          }
+        },
+        "icon_2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-truck",
+            "icon_size": 20,
+            "icon_color": "#edb3ff",
+            "title": "Free shipping on orders over $49",
+            "width": "half",
+            "padding_bottom": 16
+          }
+        },
+        "icon_1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-email",
+            "icon_size": 20,
+            "icon_color": "#edb3ff",
+            "title": "Afterpay & ZipPay Available",
+            "width": "half",
+            "padding_bottom": 16
           }
         },
         "c16f55f6-c58f-4423-9481-e7afde90c711": {
           "type": "inventory_countdown",
+          "disabled": true,
           "settings": {
             "show_notice": "always",
             "max_inventory": 10,
             "hide_inventory_counter": true,
             "padding_bottom": 16
+          }
+        },
+        "f1cdc0cf-fc10-4cd8-93a7-4cff02ecabc5": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 20,
+            "padding_bottom": 20
+          }
+        },
+        "7c69d921-5150-422f-b528-8dc20cb69133": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "PRODUCT DETAILS",
+            "text": "<p>This 4 in 1 multi-tasking formula is a mineral SPF unlike you've ever tried before. Looks tinted but spreads on easily to a translucent finish, this SPF50+ 100% mineral SPF is infused with our exclusive Vegan Collagen that can help smooth fine lines and boost moisture, plus we've added watermelon extract (chock full of Vitamin C & amino acids) for extra hydration and to help fight free radicals.  <\/p>",
+            "padding_bottom": 18
           }
         },
         "4d5dccc5-4dbe-473e-9713-d4e1627c7d22": {
@@ -68,7 +116,7 @@
             "icon_name": "icon-flower",
             "icon_size": 35,
             "icon_color": "#ffaffe",
-            "title": "100% Mineral FIlters",
+            "title": "FREE FROM: Sulfates, Parabens, Phthalates, and Frangrances",
             "width": "full",
             "padding_bottom": 16
           }
@@ -84,22 +132,15 @@
             "padding_bottom": 16
           }
         },
-        "pickup": {
-          "type": "pickup",
-          "disabled": true,
-          "settings": {
-            "padding_bottom": 32
-          }
-        },
         "tabs": {
           "type": "tab_richtext",
           "settings": {
             "show_read_more": false,
-            "style": "tabs",
-            "title_1": "Tab",
-            "raw_content_1": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
-            "title_2": "Info",
-            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
+            "style": "accordions",
+            "title_1": "HOW TO USE",
+            "raw_content_1": "<p>Use daily, 1 teaspoon roughly for face and neck. Blend in well with SPF BFF Brush. Reapply when outdoors every 80 minutes. <\/p>",
+            "title_2": "FULL INGREDIENTS",
+            "raw_content_2": "<p>xxxx<\/p>",
             "title_3": "",
             "raw_content_3": "",
             "title_4": "",
@@ -108,6 +149,13 @@
             "raw_content_5": "",
             "show_product_bundle": true,
             "padding_bottom": 0
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+            "padding_bottom": 32
           }
         },
         "divider_1": {
@@ -120,31 +168,10 @@
         },
         "upsell": {
           "type": "upsell",
+          "disabled": true,
           "settings": {
             "upsell_product": "spf50-glow-balm-makeup-sticks-set-rose-champagne-espresso-martini",
             "bg_color": "",
-            "padding_bottom": 16
-          }
-        },
-        "icon_1": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-email",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Free 30 Days Returns",
-            "width": "full",
-            "padding_bottom": 16
-          }
-        },
-        "icon_2": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-truck",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Free shipping on orders over $49",
-            "width": "full",
             "padding_bottom": 16
           }
         }
@@ -152,39 +179,44 @@
       "block_order": [
         "title",
         "6fcf3f9b-2525-4221-96ad-1045f803d23e",
+        "b428f661-7cb4-4d6b-b61f-f2b5b9130d28",
         "price",
         "variants",
         "buttons",
+        "icon_2",
+        "icon_1",
         "c16f55f6-c58f-4423-9481-e7afde90c711",
+        "f1cdc0cf-fc10-4cd8-93a7-4cff02ecabc5",
+        "7c69d921-5150-422f-b528-8dc20cb69133",
         "4d5dccc5-4dbe-473e-9713-d4e1627c7d22",
         "cfd2fdfc-911c-449b-8cbd-35baf09631d2",
         "c0f364d0-a292-4fef-b3fa-467452d234ca",
-        "pickup",
         "tabs",
+        "pickup",
         "divider_1",
-        "upsell",
-        "icon_1",
-        "icon_2"
+        "upsell"
       ],
       "settings": {
         "product_sticky_enable": true,
-        "image_layout": "grid-1",
+        "image_layout": "thumbnails",
         "image_size": "normal",
         "show_cart_bar": true,
         "enable_zoom": true,
         "enable_video_looping": false,
         "mobile_image_style": "thumbs",
         "padding_top": 90,
-        "padding_bottom": 30
+        "padding_bottom": 15
       }
     },
     "custom": {
       "type": "section-custom-content",
       "blocks": {
-        "custom-0": {
-          "type": "image",
+        "fa7a2555-265b-47a6-b572-6a469215d510": {
+          "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0v0a1848_e.jpg",
+            "video": "shopify:\/\/files\/videos\/Glow Balm Duo.MOV",
+            "show_video_popup": false,
+            "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -193,14 +225,14 @@
             "description": "",
             "text_size": 3,
             "flex_align": "align--middle-center",
-            "bg_color": "",
-            "color": "#ffffff",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "bg_color": "",
+            "color": "#ffffff"
           }
         },
         "custom-1": {
@@ -208,9 +240,9 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
-            "title": "Why all the hype?",
+            "title": "The Best Bits",
             "heading_size": 7,
-            "text": "<p>Ever since our 100% Mineral SPF Primer burst onto the scenes, she's been winning awards and capturing hearts across the globe. She's thick but with high performance protection, and with a unique blend of iron oxides that helps blur fine lines and wrinkles. Enough said! <\/p>",
+            "text": "<p><strong>* 100% Mineral <\/strong><\/p><p>Most sunscreens that are mineral are thick and gluey This is designed for makeup lovers with elegant xxx.<\/p><p><strong>* Fragrance Free<\/strong><\/p><p>We've left out fragrance in this stunning formula to ensure sensitive skin is comptabile..<\/p><p><\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -221,19 +253,19 @@
             "show_social_links": false,
             "text_columns": 1,
             "align_text": "text-left",
-            "bg_color": "#f7f7f7",
+            "bg_color": "#e2def9",
             "color": ""
           }
         }
       },
       "block_order": [
-        "custom-0",
+        "fa7a2555-265b-47a6-b572-6a469215d510",
         "custom-1"
       ],
       "settings": {
-        "height": "screen-height-one-half",
+        "height": "screen-height-full",
         "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full-padded",
+        "width": "wrapper--full",
         "borders": false,
         "reverse_blocks": false,
         "padding_top": 0,
@@ -242,6 +274,7 @@
     },
     "faq": {
       "type": "section-accordion",
+      "disabled": true,
       "blocks": {
         "faq-1": {
           "type": "text",
@@ -290,6 +323,7 @@
     },
     "shipping": {
       "type": "section-accordion",
+      "disabled": true,
       "blocks": {
         "shipping-0": {
           "type": "icon",
@@ -339,6 +373,7 @@
     },
     "about": {
       "type": "section-accordion",
+      "disabled": true,
       "blocks": {
         "about-0": {
           "type": "image",
@@ -396,11 +431,11 @@
         "imgtxt-0": {
           "type": "text",
           "settings": {
-            "subheading": "Introducing",
+            "subheading": "",
             "subheading_size": 3,
-            "title": "Another feature",
+            "title": "Your Sun Safe Routine",
             "heading_size": 7,
-            "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.<\/p>",
+            "text": "<p>1. Clean face \/ after moisturiser, apply for SPF<\/p><p><\/p><p>2. Use 1\/2 teaspoon<\/p><p><\/p><p>3. Rub in well <\/p><p><\/p><p>4. Reapply every 2 hours <\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -411,13 +446,14 @@
             "show_social_links": false,
             "text_columns": 1,
             "align_text": "text-left",
-            "bg_color": "#f7f7f7",
+            "bg_color": "#f5d4f3",
             "color": ""
           }
         },
         "imgtxt-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/NS_DEC20_HIGHRES.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -442,13 +478,119 @@
         "imgtxt-1"
       ],
       "settings": {
-        "height": "screen-height-one-half",
+        "height": "screen-height-full",
         "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full-padded",
+        "width": "wrapper--full",
         "borders": false,
         "reverse_blocks": false,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "b1fac9d9-1fe2-4c75-be72-e1c22afcbf95": {
+      "type": "section-columns",
+      "blocks": {
+        "template--16765438034178__b1fac9d9-1fe2-4c75-be72-e1c22afcbf95-168870967860984858-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vakoo_2.jpg",
+            "title": "@VAKOO",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--16765438034178__b1fac9d9-1fe2-4c75-be72-e1c22afcbf95-168870967860984858-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_7595.png",
+            "title": "@TINX",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--16765438034178__b1fac9d9-1fe2-4c75-be72-e1c22afcbf95-168870967860984858-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_8466.png",
+            "title": "@MARTHAK",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "a0795346-e6fb-495b-ae1f-894ea6ca7546": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "9fd01b5c-cb13-4c48-a2b2-f92f2dd8a48a": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16765438034178__b1fac9d9-1fe2-4c75-be72-e1c22afcbf95-168870967860984858-2",
+        "template--16765438034178__b1fac9d9-1fe2-4c75-be72-e1c22afcbf95-168870967860984858-0",
+        "template--16765438034178__b1fac9d9-1fe2-4c75-be72-e1c22afcbf95-168870967860984858-1",
+        "a0795346-e6fb-495b-ae1f-894ea6ca7546",
+        "9fd01b5c-cb13-4c48-a2b2-f92f2dd8a48a"
+      ],
+      "settings": {
+        "title": "AS SEEN ON ...",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "image_aspect_ratio": 1.1,
+        "mobile_image_aspect_ratio": 1.1,
+        "bg_color": "#f0e4ff",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "carousel"
       }
     },
     "related": {
@@ -518,6 +660,7 @@
     "about",
     "reviews",
     "imgtxt",
+    "b1fac9d9-1fe2-4c75-be72-e1c22afcbf95",
     "related",
     "ee7fd9ca-5b4e-48ad-a364-c77cc7103f17"
   ]

@@ -19,6 +19,14 @@
             "padding_bottom": 8
           }
         },
+        "90f57bd6-4319-4f33-8ea8-6dfedeb3b1f3": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>",
+            "padding_bottom": 10
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -30,7 +38,7 @@
           "settings": {
             "info_page": "",
             "subscriptions_enable_selectors": false,
-            "padding_bottom": 16
+            "padding_bottom": 18
           }
         },
         "buttons": {
@@ -39,15 +47,36 @@
             "show_quantity": true,
             "show_payment_button": false,
             "show_gift_card_recipient": false,
-            "padding_bottom": 32
+            "padding_bottom": 18
           }
         },
-        "c16f55f6-c58f-4423-9481-e7afde90c711": {
-          "type": "inventory_countdown",
+        "icon_2": {
+          "type": "icon",
           "settings": {
-            "show_notice": "always",
-            "max_inventory": 10,
-            "hide_inventory_counter": true,
+            "icon_name": "icon-truck",
+            "icon_size": 20,
+            "icon_color": "#edb3ff",
+            "title": "Free AUS shipping over $49",
+            "width": "half",
+            "padding_bottom": 16
+          }
+        },
+        "icon_1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#edb3ff",
+            "title": "Afterpay & ZipPay Available",
+            "width": "half",
+            "padding_bottom": 16
+          }
+        },
+        "divider_1": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 20,
             "padding_bottom": 16
           }
         },
@@ -55,9 +84,9 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-leaf",
-            "icon_size": 35,
+            "icon_size": 30,
             "icon_color": "#ffaffe",
-            "title": "100% Vegan",
+            "title": "{{ product.metafields.custom.key_benefit_1.value }}",
             "width": "full",
             "padding_bottom": 16
           }
@@ -66,9 +95,9 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-flower",
-            "icon_size": 35,
+            "icon_size": 30,
             "icon_color": "#ffaffe",
-            "title": "100% Mineral FIlters",
+            "title": "{{ product.metafields.custom.key_benefit_2.value }}",
             "width": "full",
             "padding_bottom": 16
           }
@@ -77,9 +106,9 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-heart",
-            "icon_size": 35,
+            "icon_size": 30,
             "icon_color": "#ff81f5",
-            "title": "Formulated for sensitive skin",
+            "title": "{{ product.metafields.custom.key_benefit_3.value }}",
             "width": "full",
             "padding_bottom": 16
           }
@@ -96,10 +125,10 @@
           "settings": {
             "show_read_more": false,
             "style": "accordions",
-            "title_1": "Tab",
-            "raw_content_1": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
-            "title_2": "Info",
-            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
+            "title_1": "{{ product.metafields.my_fields.title_how_to_use_.value }}",
+            "raw_content_1": "<p>{{ product.metafields.my_fields.how_to_use | metafield_tag }}<\/p>",
+            "title_2": "{{ product.metafields.my_fields.ingredients_title.value }}",
+            "raw_content_2": "<p>{{ product.metafields.my_fields.ingredients | metafield_tag }}<\/p>",
             "title_3": "",
             "raw_content_3": "",
             "title_4": "",
@@ -110,41 +139,12 @@
             "padding_bottom": 0
           }
         },
-        "divider_1": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "padding_top": 20,
-            "padding_bottom": 16
-          }
-        },
         "upsell": {
           "type": "upsell",
+          "disabled": true,
           "settings": {
             "upsell_product": "spf50-glow-balm-makeup-sticks-set-rose-champagne-espresso-martini",
             "bg_color": "",
-            "padding_bottom": 16
-          }
-        },
-        "icon_1": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-email",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Free 30 Days Returns",
-            "width": "full",
-            "padding_bottom": 16
-          }
-        },
-        "icon_2": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-truck",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Free shipping on orders over $49",
-            "width": "full",
             "padding_bottom": 16
           }
         }
@@ -152,39 +152,124 @@
       "block_order": [
         "title",
         "a846c587-99fa-4f55-a29d-93117976e2cf",
+        "90f57bd6-4319-4f33-8ea8-6dfedeb3b1f3",
         "price",
         "variants",
         "buttons",
-        "c16f55f6-c58f-4423-9481-e7afde90c711",
+        "icon_2",
+        "icon_1",
+        "divider_1",
         "4d5dccc5-4dbe-473e-9713-d4e1627c7d22",
         "cfd2fdfc-911c-449b-8cbd-35baf09631d2",
         "c0f364d0-a292-4fef-b3fa-467452d234ca",
         "pickup",
         "tabs",
-        "divider_1",
-        "upsell",
-        "icon_1",
-        "icon_2"
+        "upsell"
       ],
       "settings": {
         "product_sticky_enable": true,
-        "image_layout": "grid-1",
+        "image_layout": "thumbnails",
         "image_size": "normal",
         "show_cart_bar": true,
         "enable_zoom": true,
         "enable_video_looping": false,
         "mobile_image_style": "thumbs",
-        "padding_top": 40,
+        "padding_top": 20,
         "padding_bottom": 30
       }
     },
     "custom": {
       "type": "section-custom-content",
       "blocks": {
-        "custom-0": {
+        "316707c6-06b5-43c7-9f67-9c7486a399f7": {
+          "type": "video",
+          "settings": {
+            "show_video_popup": false,
+            "video_popup_social": "https:\/\/www.youtube.com\/watch?v=C2XN7FptfGk",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "bg_color": "",
+            "color": "#ffffff"
+          }
+        },
+        "custom-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "{{ product.metafields.custom.best_bits_title_.value }}",
+            "heading_size": 7,
+            "text": "{{ product.metafields.custom.best_bits_content_ | metafield_tag }}",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#e2def9",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "316707c6-06b5-43c7-9f67-9c7486a399f7",
+        "custom-1"
+      ],
+      "settings": {
+        "height": "screen-height-full",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c972e37c-91d1-4656-8552-7d50e8d6bd33": {
+      "type": "section-custom-content",
+      "blocks": {
+        "b1b4f37a-b2c6-4fbb-9381-03d7863c1beb": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "{{ product.metafields.custom.routine_title_.value }}",
+            "heading_size": 7,
+            "text": "{{ product.metafields.custom.routine_content_ | metafield_tag }}",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#f5d4f3",
+            "color": ""
+          }
+        },
+        "54b9de70-d957-4822-ad97-c62d6209cb9e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tgp_8691_lowres.jpg",
+            "image": "{{ product.metafields.custom.routine_image_.value }}",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -202,36 +287,14 @@
             "button_style": "btn--solid",
             "show_arrow": false
           }
-        },
-        "custom-1": {
-          "type": "text",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Product feature",
-            "heading_size": 7,
-            "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.<\/p>",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "#f7f7f7",
-            "color": ""
-          }
         }
       },
       "block_order": [
-        "custom-0",
-        "custom-1"
+        "b1b4f37a-b2c6-4fbb-9381-03d7863c1beb",
+        "54b9de70-d957-4822-ad97-c62d6209cb9e"
       ],
       "settings": {
-        "height": "screen-height-two-thirds",
+        "height": "screen-height-full",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "borders": false,
@@ -240,147 +303,76 @@
         "padding_bottom": 0
       }
     },
-    "faq": {
-      "type": "section-accordion",
-      "disabled": true,
+    "2cbac4d4-1a59-4447-aeee-ec774bcbca58": {
+      "type": "section-columns",
       "blocks": {
-        "faq-1": {
-          "type": "text",
+        "template--16765437903106__2cbac4d4-1a59-4447-aeee-ec774bcbca58-1689178798e8b9900d-0": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "image": "{{ product.metafields.custom.influencer_image_1_.value }}",
+            "title": "{{ product.metafields.custom.influencer_handle_1_.value }}",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
           }
         },
-        "faq-2": {
-          "type": "text",
+        "template--16765437903106__2cbac4d4-1a59-4447-aeee-ec774bcbca58-1689178798e8b9900d-1": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "image": "{{ product.metafields.custom.influencer_image_2_.value }}",
+            "title": "{{ product.metafields.custom.influencer_handle_2_.value }}",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
           }
         },
-        "faq-3": {
-          "type": "text",
+        "template--16765437903106__2cbac4d4-1a59-4447-aeee-ec774bcbca58-1689178798e8b9900d-2": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "faq-4": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "image": "{{ product.metafields.custom.influencer_image_3_.value }}",
+            "title": "{{ product.metafields.custom.influencer_handle_3_.value }}",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
           }
         }
       },
       "block_order": [
-        "faq-1",
-        "faq-2",
-        "faq-3",
-        "faq-4"
+        "template--16765437903106__2cbac4d4-1a59-4447-aeee-ec774bcbca58-1689178798e8b9900d-0",
+        "template--16765437903106__2cbac4d4-1a59-4447-aeee-ec774bcbca58-1689178798e8b9900d-1",
+        "template--16765437903106__2cbac4d4-1a59-4447-aeee-ec774bcbca58-1689178798e8b9900d-2"
       ],
       "settings": {
-        "title": "FAQ",
-        "bg_color": "",
+        "title": "{{ product.metafields.custom.as_seen_on_title_.value }}",
+        "heading_size": 6,
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "image_aspect_ratio": 1,
+        "mobile_image_aspect_ratio": 1,
+        "bg_color": "#f0e4ff",
         "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 30,
-        "padding_bottom": 0
-      }
-    },
-    "shipping": {
-      "type": "section-accordion",
-      "disabled": true,
-      "blocks": {
-        "shipping-0": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-fast-shipment",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Fast shipping",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "shipping-1": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-box",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Order tracking",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "shipping-2": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-chat",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Get in touch",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "shipping-0",
-        "shipping-1",
-        "shipping-2"
-      ],
-      "settings": {
-        "title": "Shipping",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "about": {
-      "type": "section-accordion",
-      "disabled": true,
-      "blocks": {
-        "about-0": {
-          "type": "image",
-          "settings": {
-            "title": "Image heading",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
-            "aspect_ratio": 0.6
-          }
-        },
-        "about-1": {
-          "type": "image",
-          "settings": {
-            "title": "Image heading",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
-            "aspect_ratio": 0.6
-          }
-        },
-        "about-2": {
-          "type": "image",
-          "settings": {
-            "title": "Image heading",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
-            "aspect_ratio": 0.6
-          }
-        }
-      },
-      "block_order": [
-        "about-0",
-        "about-1",
-        "about-2"
-      ],
-      "settings": {
-        "title": "About us",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 0,
-        "padding_bottom": 30
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "carousel"
       }
     },
     "reviews": {
@@ -391,67 +383,6 @@
         "width": "wrapper",
         "padding_top": 0,
         "padding_bottom": 30
-      }
-    },
-    "imgtxt": {
-      "type": "section-custom-content",
-      "blocks": {
-        "imgtxt-0": {
-          "type": "text",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Another feature",
-            "heading_size": 7,
-            "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.<\/p>",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "#f7f7f7",
-            "color": ""
-          }
-        },
-        "imgtxt-1": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "",
-            "heading_size": 7,
-            "description": "",
-            "text_size": 3,
-            "flex_align": "align--middle-center",
-            "bg_color": "",
-            "color": "#ffffff",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "imgtxt-0",
-        "imgtxt-1"
-      ],
-      "settings": {
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "borders": false,
-        "reverse_blocks": false,
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "related": {
@@ -489,11 +420,9 @@
   "order": [
     "main",
     "custom",
-    "faq",
-    "shipping",
-    "about",
+    "c972e37c-91d1-4656-8552-7d50e8d6bd33",
+    "2cbac4d4-1a59-4447-aeee-ec774bcbca58",
     "reviews",
-    "imgtxt",
     "related"
   ]
 }
