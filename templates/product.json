@@ -184,8 +184,9 @@
         "316707c6-06b5-43c7-9f67-9c7486a399f7": {
           "type": "video",
           "settings": {
+            "external_video_url_metafield": "{{ product.metafields.custom.external_video_url_metafield.value }}",
             "show_video_popup": false,
-            "video_popup_social": "https:\/\/www.youtube.com\/watch?v=C2XN7FptfGk",
+            "video_popup_social": "",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
