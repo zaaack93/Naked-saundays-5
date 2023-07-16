@@ -106,6 +106,7 @@ section[data-section-type=custom-content] .brick__block__video iframe {
        column-gap: 9px;
   flex-wrap: wrap;
   margin-top: 0px;
+  margin-bottom: 0;
 }
 .template-product .product__icon__row .product__icon__container--half .product__icon__text p span.zippay_logo {
   width: 60px;
