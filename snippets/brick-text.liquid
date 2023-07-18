@@ -20,6 +20,7 @@
   assign show_social_links = block.settings.show_social_links
   assign bg_color = block.settings.bg_color
   assign text_color = block.settings.color
+  assign use_via_metafield = block.settings.use_content_via_metafield
   assign animation_order = 0
 
   if button_style == 'btn--text' and block.settings.show_arrow
@@ -61,7 +62,30 @@
             data-aos-order="{{ animation_order }}">{{ title }}</h2>
         {%- endif -%}
 
-        {%- if text != blank -%}
+        {%if use_via_metafield and product.metafields.custom.custom_sections_items != blank  %}
+            <ul class="text_with_logos_list_section">
+            {% for item in product.metafields.custom.custom_sections_items.value %}
+
+            {%- liquid
+              assign logo = item.image
+              assign logo_width = 120
+              assign sizes = logo_width | append: 'px'
+              assign width = logo_width | times: 2
+              assign width_retina = logo_width | times: 2
+              assign widths = '100, 120, 140, 160, 180, 200, 240, 280, 320, 360, ' | append: logo_width | append: ', ' | append: width_retina
+            -%}
+                <li class="block-item-list">
+                  <div aria-hidden="true" class="block_list_image_content">
+                    {%- render 'image' image: logo, sizes: sizes, width: width, widths: widths -%}
+                  </div>
+                    <div class="block_list_text_content">
+                      <h5>{{item.heading}}</h5>
+                      <p>{{item.content}}</p>
+                    </div>
+                </li>
+              {%endfor%}
+            </ul>
+        {%- elsif text != blank -%}
           {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
           {%- assign text_columns_class = block.settings.text_columns | prepend: 'columns--' -%}
           {%- assign animation_order = animation_order | plus: 1 -%}

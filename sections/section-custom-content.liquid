@@ -3,6 +3,8 @@
 {%for block in section.blocks%}
   {% if block.settings.image!=blank or block.settings.title!=blank or block.settings.description!=blank or block.settings.text!=blank or block.settings.video!=blank or block.settings.external_video_url_metafield!=blank  %}
     {% assign isFind = true%}
+  {%elsif block.settings.use_via_metafield and product.metafields.custom.custom_sections_items != blank%}
+    {% assign isFind = true%}
   {%endif%}
 {%endfor%}
 
@@ -481,6 +483,12 @@
           "id": "text",
           "label": "Text",
           "default": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_content_via_metafield",
+          "label": "Use content through section content items metafield",
+          "default": false
         },
         {
           "type":  "range",
