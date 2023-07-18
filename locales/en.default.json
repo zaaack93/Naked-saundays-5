@@ -161,7 +161,7 @@
       "remove": "Remove",
       "subtotal": "Subtotal",
       "subtotal_items": "Items",
-      "subtotal_note": "Shipping, taxes, and discount codes are calculated at checkout",
+      "subtotal_note": " ",
       "customer_note": "Leave a note about your order",
       "cart_notes_label": "Add order notes",
       "pair_products": "Pair with",
@@ -420,7 +420,7 @@
         "one": "{{ count }} Review",
         "other": "{{ count }} Reviews"
       },
-      "notif_me":"NOTIFY ME WHEN BACK IN STOCK!",
+      "notif_me": "NOTIFY ME WHEN BACK IN STOCK!",
       "add_review": "Add a review",
       "see_all": "See All",
       "to": "To",
@@ -517,6 +517,11 @@
       "store_login": "Store Login",
       "newsletter_signup": "Newsletter Signup",
       "login": "Login"
+    }
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": " "
     }
   }
 }

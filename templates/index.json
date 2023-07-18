@@ -387,7 +387,7 @@
         "bg_color": "",
         "color": "",
         "padding_top": 32,
-        "padding_bottom": 32
+        "padding_bottom": 0
       }
     },
     "082d642f-3dbe-44ff-8dc0-9ee1a1f51592": {
@@ -511,7 +511,7 @@
         "show_date": false,
         "show_button": true,
         "show_comments": false,
-        "bg_color": "#f5eefe",
+        "bg_color": "#ffffff",
         "color": "",
         "padding_top": 32,
         "padding_bottom": 0
