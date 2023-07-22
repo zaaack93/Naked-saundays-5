@@ -420,6 +420,11 @@ section[data-section-type=custom-content] .text_with_logos_list_section .block_l
   opacity: 0;
 }
 
+#cart-drawer .callout-label {
+  font-weight: 500;
+  font-style: italic;
+}
+
 .hide {
   display: none !important;
 }

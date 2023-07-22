@@ -185,7 +185,8 @@
         "one": "and you have {{ count }} product in the cart",
         "other": "and you have {{ count }} products in the cart"
       },
-      "qualified_shipping_message": "Congratulations! Your order qualifies for free shipping"
+      "qualified_shipping_message": "Congratulations! Your order qualifies for free shipping",
+      "collout_shipping_note": "30 Day Money Back Guarantee"
     },
     "shipping_calculator": {
       "estimate_shipping": "Estimate shipping",
