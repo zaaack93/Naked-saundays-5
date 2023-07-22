@@ -196,8 +196,9 @@
                   {%- render 'product-price' product: product, section_id: section.id, block: block, block_style: block_style -%}
 
                 {%- when 'variants' -%}
-                  {%- render 'product-variant-options' product: product, section_id: section.id, block: block, block_style: block_style, product_form_id: product_form_id, enable_size_chart: true -%}
-
+                  {% unless product.has_only_default_variant %}
+                   {%- render 'product-variant-options' product: product, section_id: section.id, block: block, block_style: block_style, product_form_id: product_form_id, enable_size_chart: true -%}
+                  {%endunless%}
                 {%- when 'buttons' -%}
                   {%- render 'product-buttons' product: product, current_variant: current_variant, section_id: section.id, block: block, block_style: block_style, unique: unique, product_form_id: product_form_id -%}
 
@@ -349,21 +350,21 @@
                 {%- when 'text' -%}
                   {% comment %} Text block for product {% endcomment %}
 
-{%- if block.settings.title != blank or block.settings.text != blank -%}
-  <div class="product__block product__text" {{ block.shopify_attributes }} {{ block_style }}>
-    {%- if block.settings.title != blank -%}
-      <p class="product__heading strong">
-        {{- block.settings.title -}}
-      </p>
-    {%- endif -%}
+                  {%- if block.settings.title != blank or block.settings.text != blank -%}
+                    <div class="product__block product__text" {{ block.shopify_attributes }} {{ block_style }}>
+                      {%- if block.settings.title != blank -%}
+                        <p class="product__heading strong">
+                          {{- block.settings.title -}}
+                        </p>
+                      {%- endif -%}
 
-    {%- if block.settings.text != blank -%}
-      <div class="product__subheading">
-        {{- block.settings.text -}}
-      </div>
-    {%- endif -%}
-  </div>
-{%- endif -%}
+                      {%- if block.settings.text != blank -%}
+                        <div class="product__subheading">
+                          {{- block.settings.text -}}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
 
                 {%- when 'icon' -%}
                   {% comment %} Icon block for Product {% endcomment %}
