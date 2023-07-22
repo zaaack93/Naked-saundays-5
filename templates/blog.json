@@ -6,6 +6,8 @@
         "feat": {
           "type": "featured_post",
           "settings": {
+            "featured_post": "how-to-spf-with-naked-sundays\/kylie-jenners-makeup-artist-ariel-x-naked-sundays",
+            "subheading": "Featured post"
           }
         }
       },
@@ -13,11 +15,34 @@
         "feat"
       ],
       "settings": {
+        "height": "five-fifty-height-hero",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "main": {
       "type": "blog",
       "settings": {
+        "show_title": true,
+        "show_rss": false,
+        "show_tag_nav": false,
+        "grid": 4,
+        "rows": 4,
+        "aspect_ratio": 1,
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": false,
+        "show_comments": false,
+        "padding_top": 32,
+        "padding_bottom": 0
       }
     }
   },

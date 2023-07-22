@@ -60,6 +60,7 @@
       &ndash; {{ shop.name }}
     {% endunless %}
   {% endcapture %}
+  
   <title>{{ seo_title }}</title>
 
   {% if page_description %}
@@ -194,6 +195,18 @@
 
   {{ content_for_header }}
 
+ <!-- Hotjar Tracking Code for https://nakedsundays.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3579350,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  
 </head>
 
 <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}" data-animations="{{ settings.animations_enable }}">

@@ -1,10 +1,95 @@
 {
   "sections": {
+    "14d1c29c-975b-4ea7-889a-001b4a4b0034": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--16765437640962__14d1c29c-975b-4ea7-889a-001b4a4b0034-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TGP_6173_Edit_788a073a-f840-41cd-a7ef-29b206eab1a8.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "show_overlay_text": false,
+            "title": "Frequently Asked Questions",
+            "heading_size": 9,
+            "description": "",
+            "text_size": 5,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#FFFFFF",
+            "first_button_text": "",
+            "first_button_link": "",
+            "first_button_type": "btn--primary",
+            "first_button_size": "",
+            "first_button_style": "btn--solid",
+            "first_button_show_arrow": false,
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_type": "btn--white",
+            "second_button_size": "",
+            "second_button_style": "btn--solid",
+            "second_button_show_arrow": false
+          }
+        },
+        "template--16765437640962__14d1c29c-975b-4ea7-889a-001b4a4b0034-image-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "show_overlay_text": false,
+            "title": "Image slide",
+            "heading_size": 11,
+            "description": "Tell your brand's story through images.",
+            "text_size": 5,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#FFFFFF",
+            "first_button_text": "View products",
+            "first_button_link": "",
+            "first_button_type": "btn--primary",
+            "first_button_size": "",
+            "first_button_style": "btn--solid",
+            "first_button_show_arrow": false,
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_type": "btn--white",
+            "second_button_size": "",
+            "second_button_style": "btn--solid",
+            "second_button_show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16765437640962__14d1c29c-975b-4ea7-889a-001b4a4b0034-image-1",
+        "template--16765437640962__14d1c29c-975b-4ea7-889a-001b4a4b0034-image-2"
+      ],
+      "settings": {
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "transition": "slide",
+        "show_arrows": true,
+        "autoplay": false,
+        "autoplay_speed": 8
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": true,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
         "align_text": "text-center",
-        "bg_color": "#f7f7f7"
+        "width": "wrapper",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "faq-first": {
@@ -13,22 +98,29 @@
         "faq-heading": {
           "type": "heading",
           "settings": {
-            "title": "FAQ"
+            "title": "General"
           }
         },
         "faq-0": {
           "type": "question",
           "settings": {
+            "title": "What is Naked Sundays?",
+            "content": "<p>Hello gorgeous! We are an SPF-first Aussie skincare brand dedicated to changing the conversation around SPF by creating game-changing skin-loving, multi-purpose products all with SPF 50+.<\/p><p>We are designed to be worn specifically over or under your makeup strictly without whitecast, stickiness or that harsh sunscreen smell. We are created in an Australian TGA lab to ensure that we are regulated by the strictest standards on the planet when it comes to high performance SPF.<\/p><p>We've also worked our butts off to ensure that we are devoid of oxybenzone, parabens, mineral oils, sulfates (SLS\/SLES), GMOs, petrolatum or synthetic colours. Our creme & lotions are 100% fragrance free too.  <\/p>"
           }
         },
         "faq-1": {
           "type": "question",
           "settings": {
+            "title": "Are your products vegan?",
+            "content": "<p>We’ve fought hard to make ALL our products 100% vegan and of course, cruelty free.<\/p>"
           }
         },
         "faq-2": {
           "type": "question",
+          "disabled": true,
           "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
           }
         }
       },
@@ -39,43 +131,57 @@
         "faq-2"
       ],
       "settings": {
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
         "padding_top": 50,
         "padding_bottom": 50
       }
     },
-    "faq-second": {
+    "4598901b-bd2f-49e7-b5a2-95662315b860": {
       "type": "section-accordion-group",
       "blocks": {
-        "heading-0": {
+        "0ae4b6c3-150e-408b-ad0e-cfbff5d9b895": {
           "type": "heading",
           "settings": {
-            "title": "Shipping questions"
+            "title": "Usage"
           }
         },
-        "question-1": {
+        "93cf5458-b32e-48b4-ad83-6320dfeaf212": {
           "type": "question",
           "settings": {
+            "title": "How do I use your cremes and mist?",
+            "content": "<p>Our <strong>Creme, Mineral & Serum<\/strong> can be used with our BFF Brush for hands-free application (we hate fingers all over our skin!) and you should use up to half a teaspoon for your face and neck. Keep clear of your eyes and apply your makeup afterwards with a different brush. <br\/><\/p><p>Our<strong> Glow Mist<\/strong> can be used OVER your make-up and as an SPF top-up throughout the day for your face & body. Be sure to have an SPF before you leave the house as SPF only lasts 90 minutes. So you'll need to reapply. To do so, close your eyes and hold your breath. Spray in a circular motion up to 7 times for best results. Use as many times throughout the day as possible! <br\/><\/p><p>We are not formulated to be waterproof so make sure you reapply after swimming. <\/p>"
           }
         },
-        "question-2": {
+        "8b22a37c-b57a-4647-b1ad-a56d2e743694": {
           "type": "question",
           "settings": {
+            "title": "Are your sunscreens pregnancy safe?",
+            "content": "<p>We are formulated without oxybenzone or parabens, but we suggest you talk to your doctor about what sunscreen is best for you during your pregnancy as our mist and creme are both chemical sunscreens. Our 100% Mineral Lotion is considered perfect for everyone. <\/p>"
           }
         },
-        "question-3": {
+        "7eefadd5-6430-4f24-af0a-608bc9de9979": {
           "type": "question",
+          "disabled": true,
           "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
           }
         }
       },
       "block_order": [
-        "heading-0",
-        "question-1",
-        "question-2",
-        "question-3"
+        "0ae4b6c3-150e-408b-ad0e-cfbff5d9b895",
+        "93cf5458-b32e-48b4-ad83-6320dfeaf212",
+        "8b22a37c-b57a-4647-b1ad-a56d2e743694",
+        "7eefadd5-6430-4f24-af0a-608bc9de9979"
       ],
       "settings": {
+        "width": "wrapper",
         "bg_color": "#fafafa",
+        "color": "",
+        "border_color": "",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -86,22 +192,92 @@
         "heading-0": {
           "type": "heading",
           "settings": {
-            "title": "Returns questions"
+            "title": "Product and Ingredients"
           }
         },
         "question-1": {
           "type": "question",
           "settings": {
+            "title": "What’s in your sunscreens?",
+            "content": "<p>We’ve made it our mission to make sure we have no parabens, mineral oils or oxybenzone. We’ve also made sure that we’ve maintained the highest performing SPF ratings which are TGA & FDA listed. We are also Hawaii-reef safe, and we’ve added glowy antioxidants to ensure we’re multi-tasking so basically you need nothing else! <\/p>"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
+            "title": "But what is vegan collagen and how does it work?",
+            "content": "<p>Collagen is typically animal-derived but we’ve searched high and low to source the highest-grade vegan collagen which has been specifically & scientifically formulated to have comparable amino acid composition and sensory profile of hydrolysed animal collagen.<\/p><p>But while animal-derived collagen isn't usually able to effectively penetrate the skin due its large molecular structure, our vegan collagen is structured to have smaller molecules to penetrate deeper into the skin. Plus it's undergone extensive in-vivo clinical studies and sensory tests that show immediate & long-term results when it comes to an increase in moisture, hydration & the appearance of smoother, more rejuvenated skin. <em>Yep, we thought it was too good to be true too! <\/em><\/p>"
           }
         },
         "question-3": {
           "type": "question",
           "settings": {
+            "title": "Chemical Vs Mineral",
+            "content": "<p>Our mist and creme are chemical sunscreens, which means they contain filters that absorb UV light to prevent sun damage. Using chemical filters means we are able to provide you with lightweight, non-white formulas that offer SPF 50+ protection and will help prevent premature ageing. The ingredients we use are reef safe by Hawaii's standards (some of the strictest in the world) and we've made sure that we don't use chemicals like oxybenzone which some studies have deemed unsafe for humans and our reefs. We are working on our mineral releases which will be on their way to you very, very soon!! <\/p>"
+          }
+        },
+        "ff1d21b7-7ab8-4488-843c-1c0ca603d4d8": {
+          "type": "question",
+          "settings": {
+            "title": "Concern about benzene",
+            "content": "<p>You may have heard about some SPFs being recalled in the US due to high levels of Benzene. Unlike some countries around the world, sunscreens are considered medicines in Australia. As part of the regulation process, the ingredients used to make our sunscreens must comply with tight specifications and regulations that don’t allow benzene traces. Fragrances that are known to contain carcinogens like benzene that are used in room deodorants and surface sprays, are not allowed to be used in Australian sunscreens.<\/p>"
+          }
+        },
+        "3bfe49e8-2b09-463d-b6f8-00381b3b3dac": {
+          "type": "question",
+          "settings": {
+            "title": "Concerns about benzophenone",
+            "content": "<p>All of our products that contain octocrylene - which the TGA does not consider poses a safety risk when the sunscreens are used as directed - are screened for benzophenone at the point of manufacture and there is none present at the point of release. While the appearance of benzophenone happens over a long period of time, our sunscreens have strict shelf life expiry dates and like any product with an expiry date, should not be used beyond that date. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading-0",
+        "question-1",
+        "question-2",
+        "question-3",
+        "ff1d21b7-7ab8-4488-843c-1c0ca603d4d8",
+        "3bfe49e8-2b09-463d-b6f8-00381b3b3dac"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "faq-second": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Shipping and Packaging"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Is everything recyclable?",
+            "content": "<p>It is! Our tubes and bottles can be sent back to us free of charge to be repurposed for future use (DM for details), our mailing boxes are 100% recyclable and our brushes and purses are yours to keep, reuse & re-love! <\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Are your sunscreens pregnancy safe?",
+            "content": "<p>We are formulated without oxybenzone or parabens, but we suggest you talk to your doctor about what sunscreen is best for you during your pregnancy as our mist and creme are both chemical sunscreens. Our 100% Mineral Lotion is considered perfect for everyone. <\/p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
           }
         }
       },
@@ -112,35 +288,52 @@
         "question-3"
       ],
       "settings": {
+        "width": "wrapper",
+        "bg_color": "#fafafa",
+        "color": "",
+        "border_color": "",
         "padding_top": 50,
         "padding_bottom": 50
       }
     },
     "icons": {
       "type": "section-text-row",
+      "disabled": true,
       "blocks": {
         "icon-0": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#545454",
             "title": "Secure transactions",
-            "text": "<p>Transactions are handled with bank-grade security.<\/p>"
+            "heading_size": 4,
+            "text": "<p>Transactions are handled with bank-grade security.<\/p>",
+            "text_size": 3
           }
         },
         "icon-1": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-recycle",
+            "icon_size": 20,
+            "icon_color": "#545454",
             "title": "Simple checkout",
-            "text": "<p>Our secure checkout is quick and easy to use.<\/p>"
+            "heading_size": 4,
+            "text": "<p>Our secure checkout is quick and easy to use.<\/p>",
+            "text_size": 3
           }
         },
         "icon-2": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#545454",
             "title": "Get in touch",
-            "text": "<p>Have questions? Get in touch with us at any time.<\/p>"
+            "heading_size": 4,
+            "text": "<p>Have questions? Get in touch with us at any time.<\/p>",
+            "text_size": 3
           }
         }
       },
@@ -150,14 +343,108 @@
         "icon-2"
       ],
       "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "carousel"
+      }
+    },
+    "f19e6ea1-09f4-4f9a-94ad-c20603314ba5": {
+      "type": "contact-form",
+      "blocks": {
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "Full Name",
+            "required": false
+          }
+        },
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-email-1": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "required": true
+          }
+        },
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-body-1": {
+          "type": "body",
+          "settings": {
+            "title": "Message",
+            "required": true
+          }
+        },
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-formHeading-1": {
+          "type": "formHeading",
+          "disabled": true,
+          "settings": {
+            "title": "Optional:"
+          }
+        },
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-checkbox-1": {
+          "type": "checkbox",
+          "disabled": true,
+          "settings": {
+            "title": "This is urgent",
+            "required": false
+          }
+        },
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-select-1": {
+          "type": "select",
+          "disabled": true,
+          "settings": {
+            "title": "Select an option",
+            "label-one": "- Pick an option -",
+            "label-two": "Option one",
+            "label-three": "Option two",
+            "label-four": "Option three",
+            "label-five": "Option four",
+            "label-six": "Option five"
+          }
+        },
+        "e37620ae-2361-4b40-a31e-9b83424d8611": {
+          "type": "textarea",
+          "disabled": true,
+          "settings": {
+            "title": "Enter your message",
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-text-1",
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-email-1",
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-body-1",
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-formHeading-1",
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-checkbox-1",
+        "template--16765437640962__f19e6ea1-09f4-4f9a-94ad-c20603314ba5-select-1",
+        "e37620ae-2361-4b40-a31e-9b83424d8611"
+      ],
+      "settings": {
+        "title": "Can't find what you're looking for? Get in touch!",
+        "terms": false,
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
   "order": [
+    "14d1c29c-975b-4ea7-889a-001b4a4b0034",
     "main",
     "faq-first",
-    "faq-second",
+    "4598901b-bd2f-49e7-b5a2-95662315b860",
     "faq-third",
-    "icons"
+    "faq-second",
+    "icons",
+    "f19e6ea1-09f4-4f9a-94ad-c20603314ba5"
   ]
 }

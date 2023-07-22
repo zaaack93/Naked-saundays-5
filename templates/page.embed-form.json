@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": true,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "6ef4160a-15b6-46fd-bcbf-7caf19bd5386": {
+      "type": "section-custom-code",
+      "settings": {
+        "code": "<div data-tf-widget=\"HnF82R2z\" data-tf-opacity=\"100\" data-tf-iframe-props=\"title=Naked Sundays VIP Taylor Swift Eras Tour Tickets Competition Entry Form\" data-tf-transitive-search-params=\"\" data-tf-medium=\"snippet\" style=\"width:100%;height:1200px;\"><\/div><script src=\"\/\/embed.typeform.com\/next\/embed.js\"><\/script>",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6ef4160a-15b6-46fd-bcbf-7caf19bd5386"
+  ]
+}
