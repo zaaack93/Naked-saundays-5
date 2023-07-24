@@ -1,5 +1,13 @@
 <!-- /sections/section-columns.liquid -->
+{% assign isFind = false%}
 
+{%for block in section.blocks%}
+  {% if block.settings.image!=blank or section.settings.title!=blank or block.settings.title!=blank or block.settings.text!=blank or block.settings.video!=blank  %}
+    {% assign isFind = true%}
+  {%endif%}
+{%endfor%}
+
+{%if isFind%}
 {%- liquid
   assign enable_slider = false
   if section.blocks.size > 3
@@ -8,6 +16,7 @@
 
   render 'multicolumn', enable_slider: enable_slider
 -%}
+{%endif%}
 
 {% schema %}
   {

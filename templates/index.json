@@ -412,7 +412,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "",
+            "button_url": "shopify:\/\/pages\/our-story-1",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
