@@ -167,7 +167,7 @@ section[data-section-type=custom-content] .text_with_logos_list_section .block_l
   border-color: #E1DEF9;
   /* add any other styles you want for the active state */
 }
-.template-product .product__icon__row:empty {
+.template-product .product__icon__row.empty-div, .template-product .product__block--divider.empty-div {
   display: none;
 }
 .template-product .product__icon__row .product__icon__container--half {
