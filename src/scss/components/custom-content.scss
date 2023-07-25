@@ -14,6 +14,15 @@ section[data-section-type="custom-content"] {
         }
     }
 
+    .brick__block__text.has-padding{
+        @media only screen and (min-width: 768px) {
+            padding-left: 63px;
+        }
+        @media only screen and (max-width: 767px) {
+            padding-top: 38px;
+            padding-bottom: 38px;
+        }
+    }
     .text_with_logos_list_section{
         margin: 16px 0px 0px;
         padding: 0px;
@@ -29,6 +38,9 @@ section[data-section-type="custom-content"] {
             justify-content: flex-start;
             @media only screen and (max-width: 767px) {
                 margin-bottom: 30px ;
+            }
+            &:last-child{
+                margin-bottom: 0px !important;
             }
         }
         .block-item-list:last-child{

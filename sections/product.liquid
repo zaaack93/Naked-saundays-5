@@ -384,7 +384,7 @@
 {%- if forloop.index0 == 0 or prev_block.type != 'icon' -%}
   <div class="product__block product__icon__row" style="--block-padding-bottom: {{ block.settings.padding_bottom }}px;">
 {%- endif -%}
-
+{% if block.settings.title != blank %}
 <div class="product__icon__container product__icon__container--{{ width }}"{{ block_style }} {{ block.shopify_attributes }}>
   {%- liquid
     assign icon_size = block.settings.icon_size
@@ -425,7 +425,7 @@
     </div>
   {%- endif -%}
 </div>
-
+{%endif%}
 {%- if forloop.index == section.blocks.size or next_block.type != 'icon' -%}
   </div>
 {%- endif -%}

@@ -18,8 +18,10 @@
       }
     }
   }
-
   //icon with  text
+  .product__icon__row.empty-div,.product__block--divider.empty-div{
+    display: none;
+  }
   .product__icon__row{
     .product__icon__container--half{
       flex: 0 0 49%;

@@ -21,6 +21,7 @@
   assign bg_color = block.settings.bg_color
   assign text_color = block.settings.color
   assign use_via_metafield = block.settings.use_content_via_metafield
+  assign value_metafield =  product.metafields.custom[block.settings.metafield_key]
   assign animation_order = 0
 
   if button_style == 'btn--text' and block.settings.show_arrow
@@ -62,9 +63,9 @@
             data-aos-order="{{ animation_order }}">{{ title }}</h2>
         {%- endif -%}
 
-        {%if use_via_metafield and product.metafields.custom.custom_sections_items != blank  %}
+        {%if use_via_metafield and value_metafield != blank  %}
             <ul class="text_with_logos_list_section">
-            {% for item in product.metafields.custom.custom_sections_items.value %}
+            {% for item in value_metafield.value %}
 
             {%- liquid
               assign logo = item.image
