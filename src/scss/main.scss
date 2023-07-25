@@ -8,3 +8,13 @@
 .hide {
     display: none !important;
   }
+
+  .aspect-ratio-16-9{
+    height: auto;
+    aspect-ratio: 16/9;
+    .frame{
+        iframe {
+             transform: scale(1) !important;
+          }
+    }
+  }
