@@ -266,8 +266,8 @@
         "custom-1"
       ],
       "settings": {
-        "height": "screen-height-full",
-        "mobile_height": "screen-height-one-third--mobile",
+        "height": "seven-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
         "width": "wrapper--full",
         "borders": false,
         "reverse_blocks": false,

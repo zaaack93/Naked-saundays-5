@@ -84,6 +84,7 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-leaf",
+            "image": "{{ product.metafields.custom.key_benefit_image_1.value }}",
             "icon_size": 30,
             "icon_color": "#ffaffe",
             "title": "{{ product.metafields.custom.key_benefit_1.value }}",
@@ -95,6 +96,7 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-flower",
+            "image": "{{ product.metafields.custom.key_benefit_image_2.value }}",
             "icon_size": 30,
             "icon_color": "#ffaffe",
             "title": "{{ product.metafields.custom.key_benefit_2.value }}",
@@ -106,6 +108,7 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-heart",
+            "image": "{{ product.metafields.custom.key_benefit_image_3.value }}",
             "icon_size": 30,
             "icon_color": "#ff81f5",
             "title": "{{ product.metafields.custom.key_benefit_3.value }}",
@@ -214,6 +217,7 @@
             "heading_size": 7,
             "text": "{{ product.metafields.custom.best_bits_content_ | metafield_tag }}",
             "use_content_via_metafield": true,
+            "metafield_key": "",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -255,6 +259,7 @@
             "heading_size": 7,
             "text": "{{ product.metafields.custom.routine_content_ | metafield_tag }}",
             "use_content_via_metafield": false,
+            "metafield_key": "",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
