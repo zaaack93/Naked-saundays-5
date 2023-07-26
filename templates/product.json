@@ -217,7 +217,7 @@
             "heading_size": 7,
             "text": "{{ product.metafields.custom.best_bits_content_ | metafield_tag }}",
             "use_content_via_metafield": true,
-            "metafield_key": "",
+            "metafield_key": "Custom_sections_items",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
