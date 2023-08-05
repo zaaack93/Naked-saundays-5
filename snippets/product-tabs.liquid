@@ -130,7 +130,7 @@
     </div>
   {%- endif -%}
 {%- elsif block.settings.style == 'accordions' -%}
-  <collapsible-elements single="true">
+  <collapsible-elements>
     <div class="product-accordion">
       {%- assign accordion_blocks_html = '' -%}
       {%- assign accordion_description_attr = '' -%}
@@ -198,7 +198,7 @@
       {%- endif -%}
       {% comment %} product bundle for accordion {% endcomment %}
       {%- if block.settings.show_product_bundle and product.metafields.custom.product_bundle_list.value != blank -%}
-        <details class="accordion product-bundle-container" data-collapsible>
+        <details class="accordion product-bundle-container" data-collapsible open="true">
           <summary class="accordion__title" data-collapsible-trigger {{ accordion_description_attr }}>
             {{ 'products.general.product_bundle' | t }}
 
