@@ -21,6 +21,7 @@
         },
         "90f57bd6-4319-4f33-8ea8-6dfedeb3b1f3": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>",
@@ -55,7 +56,7 @@
             "show_quantity": true,
             "show_payment_button": false,
             "show_gift_card_recipient": false,
-            "padding_bottom": 18
+            "padding_bottom": 32
           }
         },
         "icon_2": {
@@ -75,13 +76,14 @@
             "icon_name": "icon-flare",
             "icon_size": 20,
             "icon_color": "#edb3ff",
-            "title": "Afterpay & ZipPay Available",
+            "title": "Afterpay  &   ZipPay",
             "width": "half",
             "padding_bottom": 16
           }
         },
         "divider_1": {
           "type": "divider",
+          "disabled": true,
           "settings": {
             "show_line": true,
             "padding_top": 20,
@@ -90,6 +92,7 @@
         },
         "4d5dccc5-4dbe-473e-9713-d4e1627c7d22": {
           "type": "icon",
+          "disabled": true,
           "settings": {
             "icon_name": "icon-leaf",
             "image": "{{ product.metafields.custom.key_benefit_image_1.value }}",
@@ -102,6 +105,7 @@
         },
         "cfd2fdfc-911c-449b-8cbd-35baf09631d2": {
           "type": "icon",
+          "disabled": true,
           "settings": {
             "icon_name": "icon-flower",
             "image": "{{ product.metafields.custom.key_benefit_image_2.value }}",
@@ -114,6 +118,7 @@
         },
         "c0f364d0-a292-4fef-b3fa-467452d234ca": {
           "type": "icon",
+          "disabled": true,
           "settings": {
             "icon_name": "icon-heart",
             "image": "{{ product.metafields.custom.key_benefit_image_3.value }}",
@@ -179,15 +184,15 @@
         "upsell"
       ],
       "settings": {
-        "product_sticky_enable": true,
-        "image_layout": "thumbnails",
+        "product_sticky_enable": false,
+        "image_layout": "grid-1",
         "image_size": "normal",
-        "show_cart_bar": true,
+        "show_cart_bar": false,
         "enable_zoom": true,
         "enable_video_looping": false,
         "mobile_image_style": "thumbs",
-        "padding_top": 20,
-        "padding_bottom": 50
+        "padding_top": 72,
+        "padding_bottom": 70
       }
     },
     "custom": {
@@ -224,23 +229,23 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
-            "title": "{{ product.metafields.custom.best_bits_title_.value }}",
-            "heading_size": 7,
+            "title": "Key Benefits",
+            "heading_size": 6,
             "text": "",
             "use_content_via_metafield": true,
             "metafield_key": "custom_sections_items",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
             "button_style": "btn--solid",
             "show_arrow": false,
             "show_social_links": false,
             "text_columns": 1,
             "align_text": "text-left",
-            "bg_color": "#e2def9",
-            "color": ""
+            "bg_color": "#fdffc1",
+            "color": "#212121"
           }
         }
       },
@@ -250,7 +255,7 @@
       ],
       "settings": {
         "height": "screen-height-full",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-three-quarters--mobile",
         "width": "wrapper--full",
         "borders": false,
         "reverse_blocks": false,
@@ -260,6 +265,7 @@
     },
     "c972e37c-91d1-4656-8552-7d50e8d6bd33": {
       "type": "section-custom-content",
+      "disabled": true,
       "blocks": {
         "b1b4f37a-b2c6-4fbb-9381-03d7863c1beb": {
           "type": "text",
@@ -281,20 +287,18 @@
             "show_social_links": false,
             "text_columns": 1,
             "align_text": "text-left",
-            "bg_color": "#f5d4f3",
+            "bg_color": "#f0e4ff",
             "color": ""
           }
         },
-        "dc539ae0-ec31-454f-8c1b-742721d9064e": {
+        "cfd1a8db-39f3-4755-9c34-77f41b78d306": {
           "type": "video",
           "settings": {
-            "video": "{{ product.metafields.custom.routine_image_.value }}",
             "external_video_url_metafield": "",
             "show_video_popup": false,
             "video_popup_social": "",
-            "image": "{{ product.metafields.custom.routine_image_.value }}",
             "overlay_opacity": 0,
-            "overlay_color": "#000000",
+            "overlay_color": "#000",
             "show_overlay_text": false,
             "title": "",
             "heading_size": 7,
@@ -308,13 +312,13 @@
             "button_style": "btn--solid",
             "show_arrow": false,
             "bg_color": "",
-            "color": "#ffffff"
+            "color": "#FFFFFF"
           }
         }
       },
       "block_order": [
         "b1b4f37a-b2c6-4fbb-9381-03d7863c1beb",
-        "dc539ae0-ec31-454f-8c1b-742721d9064e"
+        "cfd1a8db-39f3-4755-9c34-77f41b78d306"
       ],
       "settings": {
         "height": "screen-height-full",
@@ -328,6 +332,7 @@
     },
     "2cbac4d4-1a59-4447-aeee-ec774bcbca58": {
       "type": "section-columns",
+      "disabled": true,
       "blocks": {
         "template--16765437903106__2cbac4d4-1a59-4447-aeee-ec774bcbca58-1689178798e8b9900d-0": {
           "type": "image",
@@ -438,6 +443,135 @@
         "padding_top": 30,
         "padding_bottom": 0
       }
+    },
+    "49894eb0-2ccd-427d-b990-c76fc9a3b173": {
+      "type": "section-product",
+      "disabled": true,
+      "blocks": {
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-title-1": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "show_rating": true,
+            "enable_star_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 8
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-price-1": {
+          "type": "price",
+          "settings": {
+            "padding_bottom": 16
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-variants-1": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_payment_button": true,
+            "padding_bottom": 32
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-tab_richtext-1": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": true,
+            "style": "tabs",
+            "title_1": "Tab",
+            "raw_content_1": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
+            "title_2": "Info",
+            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
+            "title_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 0
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-divider-1": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 30,
+            "padding_bottom": 20
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-upsell-1": {
+          "type": "upsell",
+          "settings": {
+            "upsell_product": "",
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-divider-2": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 10,
+            "padding_bottom": 30
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-email",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Free 30 Days Returns",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-icon-2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-truck",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Free shipping on orders over $100",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-title-1",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-price-1",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-variants-1",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-buttons-1",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-tab_richtext-1",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-divider-1",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-upsell-1",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-divider-2",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-icon-1",
+        "template--16786981814530__49894eb0-2ccd-427d-b990-c76fc9a3b173-icon-2"
+      ],
+      "settings": {
+        "home_product": "",
+        "product_sticky_enable": true,
+        "image_layout": "thumbnails",
+        "image_size": "normal",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_style": "thumbs",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "block_padding": 20,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
@@ -446,6 +580,7 @@
     "c972e37c-91d1-4656-8552-7d50e8d6bd33",
     "2cbac4d4-1a59-4447-aeee-ec774bcbca58",
     "reviews",
-    "related"
+    "related",
+    "49894eb0-2ccd-427d-b990-c76fc9a3b173"
   ]
 }

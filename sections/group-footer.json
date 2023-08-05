@@ -38,14 +38,6 @@
             "column_width": 33
           }
         },
-        "8881181a-bbd1-4378-a938-284e1b21022f": {
-          "type": "linklist",
-          "settings": {
-            "linklist": "mobile-secondary",
-            "title": "Shop",
-            "column_width": 24
-          }
-        },
         "62a875a8-668a-45ff-b07d-4ec9dd1cba13": {
           "type": "text",
           "settings": {
@@ -54,14 +46,23 @@
             "text": "<p>Use SPF as directed. Reapply Often. Stay out of the sun where possible. Wear protective clothing and eyewear as SPF is only one form of sun protection.<\/p>",
             "column_width": 25
           }
+        },
+        "8881181a-bbd1-4378-a938-284e1b21022f": {
+          "type": "linklist",
+          "disabled": true,
+          "settings": {
+            "linklist": "mobile-secondary",
+            "title": "Shop",
+            "column_width": 24
+          }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
         "4e72a60e-e01c-4761-ae9c-8bf78650e415",
-        "8881181a-bbd1-4378-a938-284e1b21022f",
-        "62a875a8-668a-45ff-b07d-4ec9dd1cba13"
+        "62a875a8-668a-45ff-b07d-4ec9dd1cba13",
+        "8881181a-bbd1-4378-a938-284e1b21022f"
       ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/NakedSundays-Logo_MultiColor_1997x_ceace983-9ddf-462c-bb09-e14ad59fac54.png",
