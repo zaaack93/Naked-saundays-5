@@ -11761,12 +11761,11 @@
       if (this.priceOffType) {
         this.priceOffType.innerHTML = window.theme.strings.sale || 'sale';
       }
-
       if (this.priceOffAmount && this.priceOffWrap) {
         const variant = formState.variant;
-        const discountFloat = (variant.compare_at_price - variant.price) / variant.compare_at_price;
-        const discountInt = Math.floor(discountFloat * 100);
-        this.priceOffAmount.innerHTML = `${discountInt}%`;
+        const discountFloat = (variant.compare_at_price - variant.price) / 100;
+        const discountInt = Math.floor(discountFloat);
+        this.priceOffAmount.innerHTML = `$${discountInt}`;
         this.priceOffWrap.classList.remove(classes$8.hidden);
       }
     }
