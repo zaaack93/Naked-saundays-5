@@ -1,3 +1,10 @@
+{% assign isFind = false%}
+
+{% if section.settings.heading!=blank or section.settings.description!=blank or section.settings.image_1!=blank or section.settings.image_2!=blank %}
+  {% assign isFind = true%}
+{%endif%}
+
+{% if isFind %}
 {%- liquid
   assign animation_order = 0
   assign animation_anchor = '#SectionBeforeAfter--' | append: section.id
@@ -91,7 +98,7 @@
     {%- endif -%}
   </div>
 </section>
-
+{%endif%}
 {% schema %}
   {
     "name": "Before and after",
