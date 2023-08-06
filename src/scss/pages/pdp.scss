@@ -52,6 +52,7 @@
       }
     }
   }
+
       //product bundle
   .product-bundle-container {
     .accordion-content {
@@ -158,3 +159,13 @@
     }
   }
 }
+
+    //descirption accordion
+    .description__accordion{
+      .accordion__body{
+        padding-top: 1rem;
+      }
+      .accordion__title{
+        display: none;
+      }
+    }

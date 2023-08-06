@@ -297,6 +297,13 @@ section[data-section-type=custom-content] .text_with_logos_list_section .block_l
   }
 }
 
+.description__accordion .accordion__body {
+  padding-top: 1rem;
+}
+.description__accordion .accordion__title {
+  display: none;
+}
+
 .template-cart div[content-gift-product] {
   width: 100%;
 }
