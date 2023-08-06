@@ -197,7 +197,6 @@
     },
     "custom": {
       "type": "section-custom-content",
-      "disabled": true,
       "blocks": {
         "316707c6-06b5-43c7-9f67-9c7486a399f7": {
           "type": "video",
@@ -404,27 +403,6 @@
         "layout_mobile": "carousel"
       }
     },
-    "eb460dee-3ca0-431b-b7b4-54c53de5bd9e": {
-      "type": "section-before-after",
-      "settings": {
-        "heading": "{{ product.metafields.custom.before_after_title_.value }}",
-        "description": "{{ product.metafields.custom.before_after_content_ | metafield_tag }}",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "image_1": "{{ product.metafields.custom.before_image.value }}",
-        "image_2": "{{ product.metafields.custom.after_image.value }}",
-        "aspect_ratio": 1,
-        "width": "wrapper",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "reviews": {
       "type": "reviews",
       "settings": {
@@ -601,7 +579,6 @@
     "custom",
     "c972e37c-91d1-4656-8552-7d50e8d6bd33",
     "2cbac4d4-1a59-4447-aeee-ec774bcbca58",
-    "eb460dee-3ca0-431b-b7b4-54c53de5bd9e",
     "reviews",
     "related",
     "49894eb0-2ccd-427d-b990-c76fc9a3b173"

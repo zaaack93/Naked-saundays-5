@@ -2,7 +2,7 @@
   "general": {
     "ie11_support_message": "This site has limited support for your browser. We recommend switching to Edge, Chrome, Safari, or Firefox.",
     "swatches": {
-      "color": "Color, Colour"
+      "color": "Color, Colour, Shade"
     },
     "siblings": {
       "label": "Color"
