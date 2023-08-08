@@ -414,7 +414,7 @@
   </div>
 
   {%- if block.settings.title != blank -%}
-    <div class="product__icon__text" data-aos="fade" data-aos-duration="500">
+    <div class="product__icon__text" data-aos="fade" data-aos-duration="500" style="font-style:{{block.settings.font_style}}">
       {% capture afterpay_logo %}{% render 'afterpay-logo' %}{% endcapture %}
       {% capture zippay_logo %}{% render 'zippay-logo' %}{% endcapture %}
 
@@ -1527,6 +1527,22 @@
             "max": 80,
             "step": 5,
             "default": 20
+          },
+          {
+            "type": "select",
+            "id": "font_style",
+            "label": "Font Style",
+            "default": "normal",
+            "options": [
+              {
+                "value": "normal",
+                "label": "Normal"
+              },
+              {
+                "value": "italic",
+                "label": "Italic"
+              }
+            ]
           },
           {
             "type": "color",
