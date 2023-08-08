@@ -2,6 +2,7 @@
   "sections": {
     "slideshow": {
       "type": "section-slideshow",
+      "disabled": true,
       "blocks": {
         "slideshow-0": {
           "type": "image",
@@ -36,13 +37,62 @@
         "slideshow-0"
       ],
       "settings": {
-        "height": "image-height",
+        "height": "seven-fifty-height-hero",
         "mobile_height": "screen-height-full--mobile",
         "width": "wrapper--full",
         "transition": "slide",
         "show_arrows": true,
         "autoplay": false,
         "autoplay_speed": 8
+      }
+    },
+    "83124b63-b0c1-4821-b31e-281e19325e9a": {
+      "type": "section-hero",
+      "blocks": {
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "NEW! SPF50 Lip Oils",
+            "heading_size": 11
+          }
+        },
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-text-1": {
+          "type": "text",
+          "settings": {
+            "description": "World First SPF-infused lip oils are here!",
+            "text_size": 5,
+            "text_style": "font-heading"
+          }
+        },
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-button-1": {
+          "type": "button",
+          "settings": {
+            "link_text": "SHOP THE LIP COLLECTION",
+            "link": "shopify:\/\/collections\/lip-oil-collection",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-heading-1",
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-text-1",
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-button-1"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/tali-cherry_copy.jpg",
+        "image_2": "shopify:\/\/shop_images\/14.png",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align": "align--bottom-center",
+        "overlay_opacity": 30,
+        "overlay_color": "#000",
+        "show_overlay_text": true,
+        "bg_color": "",
+        "color": "#FFFFFF"
       }
     },
     "logos": {
@@ -108,13 +158,13 @@
       ],
       "settings": {
         "title": "",
-        "enable_heading_slider": true,
+        "enable_heading_slider": false,
         "text_style": "font-body",
         "logo_opacity": 100,
-        "bg_color": "#ffffff",
+        "bg_color": "#ffdcfc",
         "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 28,
+        "padding_bottom": 29
       }
     },
     "e14f32e8-0f6b-4bae-b341-f5a7e9e7e90f": {
@@ -133,7 +183,7 @@
         "style": "grid",
         "grid": 4,
         "rows": 1,
-        "layout_mobile": "carousel",
+        "layout_mobile": "2",
         "bg_color": "",
         "color": "",
         "padding_top": 50,
@@ -419,6 +469,7 @@
   },
   "order": [
     "slideshow",
+    "83124b63-b0c1-4821-b31e-281e19325e9a",
     "logos",
     "e14f32e8-0f6b-4bae-b341-f5a7e9e7e90f",
     "product-with-image",
