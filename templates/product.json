@@ -31,7 +31,9 @@
         "price": {
           "type": "price",
           "settings": {
-            "padding_bottom": 16
+            "padding_bottom": 16,
+            "color_sale": "#FFFFFF",
+            "bg_sale": "#ff81f5"
           }
         },
         "variants": {
@@ -58,11 +60,22 @@
         },
         "buttons": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "show_quantity": true,
             "show_payment_button": false,
             "show_gift_card_recipient": false,
             "padding_bottom": 20
+          }
+        },
+        "4b447ae6-3e83-4a71-ba59-00521189b9eb": {
+          "type": "buttons-v2",
+          "settings": {
+            "show_quantity": true,
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 20,
+            "bg_boxshadow": "#000"
           }
         },
         "icon_2": {
@@ -181,6 +194,7 @@
         "304f09b5-0771-4bb4-b90f-1e1bcc842967",
         "3fa3c17a-a569-4a6a-a2b0-af427002396b",
         "buttons",
+        "4b447ae6-3e83-4a71-ba59-00521189b9eb",
         "icon_2",
         "icon_1",
         "divider_1",
