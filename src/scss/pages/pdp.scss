@@ -1,5 +1,4 @@
 .template-product {
-
   .product__page {
     .product__images {
       @media only screen and (min-width: 750px) {
@@ -11,9 +10,9 @@
 
     //highlight label selected css
     .radio__button {
-      input[type="radio"]:checked+label {
-        background: #E1DEF9;
-        border-color: #E1DEF9;
+      input[type="radio"]:checked + label {
+        background: #e1def9;
+        border-color: #e1def9;
         /* add any other styles you want for the active state */
       }
     }
@@ -180,8 +179,54 @@
     display: none;
   }
 }
-  //price accordion
-  .customized-box {
-    position: initial;
-    border-radius: 40px;
+
+//price accordion
+.customized-box {
+  position: initial;
+  border-radius: 40px;
+}
+
+.button-with-price {
+  display: flex !important;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .text-box {
+    width: 60%;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      top: 50%;
+      height: 20px;
+      background: #9f878736;
+      right: 0;
+      transform: translateY(-50%);
+    }
   }
+
+  .text-box-price {
+    width: 40%;
+  }
+}
+
+.button-v2-custom {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+.v2-custom-button {
+  .select-popout {
+    height: 100%;
+    .select-popout__toggle {
+      height: calc(100% + 2px);
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}

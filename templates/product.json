@@ -32,7 +32,7 @@
           "type": "price",
           "settings": {
             "padding_bottom": 16,
-            "color_sale": "#FFFFFF",
+            "color_sale": "#ffffff",
             "bg_sale": "#ff81f5"
           }
         },
@@ -75,7 +75,9 @@
             "show_payment_button": false,
             "show_gift_card_recipient": false,
             "padding_bottom": 20,
-            "bg_boxshadow": "#000"
+            "bg_boxshadow": "#000000",
+            "text_color_button": "#000000",
+            "bg_button": "#cbc2f6"
           }
         },
         "icon_2": {

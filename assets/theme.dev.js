@@ -11626,8 +11626,18 @@
         addToCartText.forEach((element) => {
           if (variant) {
             if (variant.available) {
+              if(element.attributes['data-product-with-price']){
+                const discountFloat = Math.floor(variant.price / 100).toFixed(2);
+                element.innerHTML=`<span class="text-box">${addText}</span><span class="text-box-price">$${discountFloat}</span>`
+              }
+              else
               element.innerHTML = addText;
             } else {
+              if(element.attributes['data-product-with-price']){
+                const discountFloat = Math.floor(variant.price / 100).toFixed(2);
+                element.innerHTML=`<span class="text-box">${theme.strings.soldOut}</span><span class="text-box-price">$${discountFloat}</span>`
+              }
+              else
               element.innerHTML = theme.strings.soldOut;
             }
           } else {
