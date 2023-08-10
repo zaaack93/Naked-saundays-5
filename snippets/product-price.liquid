@@ -70,7 +70,7 @@
     </div>
 
     {%- if settings.sale_badge -%}
-      <span data-price-off class="product__price--off hidden">
+      <span data-price-off class="product__price--off hidden sale-box customized-box" style="color: {{block.settings.color_sale}};background-color: {{block.settings.bg_sale}};">
         {{ 'products.product.on_sale' | t }}
         <span data-price-off-amount></span>
       </span>

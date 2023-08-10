@@ -14,6 +14,7 @@
   {%- endunless -%}
 
   {{ 'theme.css' | asset_url | preload_tag: as: 'style' }}
+  {{ 'main.css' | asset_url | preload_tag: as: 'style' }}
   {{ 'vendor.js' | asset_url | preload_tag: as: 'script' }}
   {{ 'theme.dev.js' | asset_url | preload_tag: as: 'script' }}
   <script type="module" src="{{ 'custom-section.js' | asset_url }}"></script>

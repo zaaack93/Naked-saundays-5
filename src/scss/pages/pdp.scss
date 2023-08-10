@@ -1,7 +1,7 @@
-.template-product{
+.template-product {
 
-  .product__page{
-    .product__images{
+  .product__page {
+    .product__images {
       @media only screen and (min-width: 750px) {
         position: sticky;
         height: fit-content;
@@ -10,38 +10,44 @@
     }
 
     //highlight label selected css
-  .radio__button {
-      input[type="radio"]:checked + label {
+    .radio__button {
+      input[type="radio"]:checked+label {
         background: #E1DEF9;
         border-color: #E1DEF9;
         /* add any other styles you want for the active state */
       }
     }
   }
+
   //icon with  text
-  .product__icon__row.empty-div,.product__block--divider.empty-div{
+  .product__icon__row.empty-div,
+  .product__block--divider.empty-div {
     display: none;
   }
-  .product__icon__row{
-    .product__icon__container--half{
+
+  .product__icon__row {
+    .product__icon__container--half {
       flex: 0 0 49%;
       max-width: 49%;
+
       .product__icon__text {
-        p{
+        p {
           display: flex;
           align-items: center;
           column-gap: 9px;
           flex-wrap: wrap;
           margin-top: 0px;
           margin-bottom: 0;
-          span.zippay_logo{
+
+          span.zippay_logo {
             width: 60px;
             height: 16px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
           }
-          span.aftepay_logo{
+
+          span.aftepay_logo {
             width: 70px;
             height: 13px;
             background-position: center;
@@ -53,7 +59,7 @@
     }
   }
 
-      //product bundle
+  //product bundle
   .product-bundle-container {
     .accordion-content {
       padding-top: 10px;
@@ -114,8 +120,10 @@
           line-height: 18px;
           color: #000000;
         }
+
         margin-top: 0px;
         margin-bottom: 10px;
+
         p {
           margin: 0px;
         }
@@ -125,6 +133,7 @@
     @media only screen and (max-width: 749px) {
       .cart__item {
         margin-bottom: 16px;
+
         .cart__item__image {
           img {
             width: 120px;
@@ -148,6 +157,7 @@
             font-size: 12px;
             line-height: 16px;
           }
+
           margin-bottom: 9px;
         }
 
@@ -160,12 +170,18 @@
   }
 }
 
-    //descirption accordion
-    .description__accordion{
-      .accordion__body{
-        padding-top: 1rem;
-      }
-      .accordion__title{
-        display: none;
-      }
-    }
+//descirption accordion
+.description__accordion {
+  .accordion__body {
+    padding-top: 1rem;
+  }
+
+  .accordion__title {
+    display: none;
+  }
+}
+  //price accordion
+  .customized-box {
+    position: initial;
+    border-radius: 40px;
+  }
