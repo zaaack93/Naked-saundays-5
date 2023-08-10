@@ -70,6 +70,7 @@
           "settings": {
             "icon_name": "icon-truck",
             "icon_size": 20,
+            "font_style": "normal",
             "icon_color": "#edb3ff",
             "title": "Free AUS Shipping +$49",
             "width": "half",
@@ -81,6 +82,7 @@
           "settings": {
             "icon_name": "icon-flare",
             "icon_size": 20,
+            "font_style": "normal",
             "icon_color": "#edb3ff",
             "title": "Afterpay  &   ZipPay",
             "width": "half",
@@ -136,6 +138,7 @@
           "settings": {
             "icon_name": "icon-heart",
             "icon_size": 25,
+            "font_style": "italic",
             "icon_color": "#ffaffe",
             "title": "{{ product.metafields.custom.key_benefit_1.value }}",
             "width": "full",
@@ -147,6 +150,7 @@
           "settings": {
             "icon_name": "icon-cloud",
             "icon_size": 30,
+            "font_style": "italic",
             "icon_color": "#ffaffe",
             "title": "{{ product.metafields.custom.key_benefit_2.value }}",
             "width": "full",
@@ -160,6 +164,7 @@
             "icon_name": "icon-heart",
             "image": "{{ product.metafields.custom.key_benefit_image_3.value }}",
             "icon_size": 30,
+            "font_style": "normal",
             "icon_color": "#ff81f5",
             "title": "{{ product.metafields.custom.key_benefit_3.value }}",
             "width": "full",
