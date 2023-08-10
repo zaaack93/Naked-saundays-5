@@ -229,4 +229,15 @@
       font-size: 16px;
     }
   }
+  @media only screen and (max-width: 749px) {
+    .product__submit__item{
+      grid-template-columns: minmax(0, 6rem) minmax(0, 100%);
+      .select-popout__toggle{
+        font-size: 14px;
+      }
+      .button-v2-custom{
+        font-size: 14px;
+      }
+    }
+  }
 }

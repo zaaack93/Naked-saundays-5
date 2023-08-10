@@ -350,6 +350,17 @@ section[data-section-type=custom-content] .text_with_logos_list_section .block_l
   font-weight: 600;
   font-size: 16px;
 }
+@media only screen and (max-width: 749px) {
+  .v2-custom-button .product__submit__item {
+    grid-template-columns: minmax(0, 6rem) minmax(0, 100%);
+  }
+  .v2-custom-button .product__submit__item .select-popout__toggle {
+    font-size: 14px;
+  }
+  .v2-custom-button .product__submit__item .button-v2-custom {
+    font-size: 14px;
+  }
+}
 
 .template-cart div[content-gift-product] {
   width: 100%;
