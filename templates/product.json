@@ -75,7 +75,7 @@
             "show_payment_button": false,
             "show_gift_card_recipient": false,
             "padding_bottom": 20,
-            "bg_boxshadow": "#000000",
+            "bg_boxshadow": "#212121",
             "text_color_button": "#000000",
             "bg_button": "#cbc2f6"
           }
