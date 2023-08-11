@@ -1,8 +1,53 @@
 {
   "sections": {
+    "fd49954c-cda8-4fbc-ba64-e29bcf47d6cf": {
+      "type": "section-slideshow-v2",
+      "blocks": {
+        "f414b1d1-87d9-410d-8a00-9c751d7d627e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cabana_Glow-Unedited-455.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MiniMineral.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "show_overlay_text": false,
+            "title": "<h2>NEW! SPF50 Lip Oils<\/h2>",
+            "heading_size": 11,
+            "description": "<p>World First SPF-infused lip oils are here!<\/p>",
+            "text_size": 5,
+            "flex_align": "align--bottom-center",
+            "bg_color": "",
+            "color": "#FFFFFF",
+            "first_button_text": "Shop the lip collection",
+            "first_button_link": "",
+            "first_button_type": "btn--primary",
+            "first_button_size": "",
+            "first_button_style": "btn--solid",
+            "first_button_show_arrow": false,
+            "second_button_text": "Shop the mists",
+            "second_button_link": "",
+            "second_button_type": "btn--secondary",
+            "second_button_size": "",
+            "second_button_style": "btn--solid",
+            "second_button_show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "f414b1d1-87d9-410d-8a00-9c751d7d627e"
+      ],
+      "settings": {
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "transition": "slide",
+        "show_arrows": true,
+        "autoplay": false,
+        "autoplay_speed": 8
+      }
+    },
     "slideshow": {
       "type": "section-slideshow",
-      "disabled": true,
       "blocks": {
         "slideshow-0": {
           "type": "image",
@@ -36,6 +81,7 @@
       "block_order": [
         "slideshow-0"
       ],
+      "disabled": true,
       "settings": {
         "height": "seven-fifty-height-hero",
         "mobile_height": "screen-height-full--mobile",
@@ -89,10 +135,10 @@
         "mobile_height": "screen-height-one-half--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 30,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": true,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     },
     "logos": {
@@ -192,7 +238,6 @@
     },
     "product-with-image": {
       "type": "section-custom-content",
-      "disabled": true,
       "blocks": {
         "product": {
           "type": "product",
@@ -230,6 +275,7 @@
         "product",
         "image"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
@@ -447,7 +493,6 @@
     },
     "168653592307a5567c": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "7c5262d1-c668-4272-9091-c56d5b7329ea": {
           "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
@@ -462,12 +507,14 @@
       "block_order": [
         "7c5262d1-c668-4272-9091-c56d5b7329ea"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": false
       }
     }
   },
   "order": [
+    "fd49954c-cda8-4fbc-ba64-e29bcf47d6cf",
     "slideshow",
     "83124b63-b0c1-4821-b31e-281e19325e9a",
     "logos",
