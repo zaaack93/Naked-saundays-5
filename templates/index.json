@@ -18,18 +18,18 @@
             "flex_align": "align--bottom-center",
             "bg_color": "",
             "color": "#ffffff",
-            "first_button_text": "Shop the lip collection",
+            "first_button_text": "Shop now",
             "first_button_link": "",
             "first_button_type": "btn--primary",
-            "first_button_size": "",
+            "first_button_size": "btn--large",
             "first_button_style": "btn--solid",
-            "first_button_show_arrow": false,
+            "first_button_show_arrow": true,
             "second_button_text": "Shop the mists",
             "second_button_link": "shopify:\/\/collections\/mists",
             "second_button_type": "btn--secondary",
-            "second_button_size": "",
+            "second_button_size": "btn--large",
             "second_button_style": "btn--solid",
-            "second_button_show_arrow": false
+            "second_button_show_arrow": true
           }
         }
       },
