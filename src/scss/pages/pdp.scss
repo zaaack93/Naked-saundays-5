@@ -241,3 +241,19 @@
     }
   }
 }
+@media only screen and (min-width: 749px) and (max-width: 1050px) {
+  .product__submit__item {
+    grid-template-columns: minmax(0, 4.5rem) minmax(0, 100%);
+    .button-v2-custom{
+      font-size: 14px;
+      padding-left: 10PX;
+      padding-right: 10px;
+      .text-box{
+        min-width: 140px;
+      }
+      .text-box-price{
+        flex: 1;
+      }
+    }
+  }
+}

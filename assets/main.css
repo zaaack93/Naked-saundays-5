@@ -362,6 +362,22 @@ section[data-section-type=custom-content] .text_with_logos_list_section .block_l
   }
 }
 
+@media only screen and (min-width: 749px) and (max-width: 1050px) {
+  .product__submit__item {
+    grid-template-columns: minmax(0, 4.5rem) minmax(0, 100%);
+  }
+  .product__submit__item .button-v2-custom {
+    font-size: 14px;
+    padding-left: 10PX;
+    padding-right: 10px;
+  }
+  .product__submit__item .button-v2-custom .text-box {
+    min-width: 140px;
+  }
+  .product__submit__item .button-v2-custom .text-box-price {
+    flex: 1;
+  }
+}
 .template-cart div[content-gift-product] {
   width: 100%;
 }
