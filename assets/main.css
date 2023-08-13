@@ -541,7 +541,6 @@ section[data-section-type=custom-content] .text_with_logos_list_section .block_l
   }
   .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__description {
     margin-top: 8px;
-    margin-bottom: 0px;
     text-align: center;
     color: #000000;
   }
@@ -552,7 +551,6 @@ section[data-section-type=custom-content] .text_with_logos_list_section .block_l
     margin: 0px;
   }
   .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__button-group .hero__button {
-    margin-top: 26px;
     margin-bottom: 0px;
   }
   .slideshow-v2 .secondary_button_wrapper {

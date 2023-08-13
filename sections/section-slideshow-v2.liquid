@@ -116,25 +116,23 @@
                   <div class="hero__content{% if hero_transparent %} hero__content--transparent{% if show_overlay_text %} backdrop--radial{% endif %}{% endif %}"{% if show_header_backdrop %}style="--bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"{% endif %}>
                     {%- unless block.settings.title == '' -%}
                       {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
-                      <div
-                        class="hero__title {{ font_size_class }}"
+                      <h2 class="hero__title {{ font_size_class }}"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}">
-                        {{ block.settings.title }}
-                      </div>
+                        {{ block.settings.title | escape }}
+                      </h2>
                       {%- assign animation_order = animation_order | plus: 1 -%}
                     {%- endunless -%}
-
+  
                     {%- unless block.settings.description == '' -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
-                      <div
-                        class="hero__description font-heading h5--body {{ font_size_class }}"
+                      <p class="hero__description h5--body {{ font_size_class }}"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}">
                         {{ block.settings.description }}
-                      </div>
+                      </p>
                       {%- assign animation_order = animation_order | plus: 1 -%}
                     {%- endunless -%}
 
@@ -433,7 +431,7 @@
             "type": "header",
             "content": "Text"
           }, {
-            "type": "richtext",
+            "type": "text",
             "id": "title",
             "label": "Heading"
           }, {
@@ -445,7 +443,7 @@
             "step": 1,
             "default": 11
           }, {
-            "type": "richtext",
+            "type": "textarea",
             "id": "description",
             "label": "Text"
           }, {

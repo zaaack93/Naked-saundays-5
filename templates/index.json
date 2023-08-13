@@ -7,13 +7,13 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Cabana_Glow-Unedited-455.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/MiniMineral.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/0V0A1337.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
-            "title": "<h2>NEW! SPF50 Lip Oils<\/h2>",
-            "heading_size": 11,
-            "description": "<p>World First SPF-infused lip oils are here!<\/p>",
+            "title": "NEW! SPF50 Lip Oils",
+            "heading_size": 8,
+            "description": "World First SPF-infused lip oils are here!",
             "text_size": 5,
             "flex_align": "align--bottom-center",
             "bg_color": "",
@@ -36,9 +36,10 @@
       "block_order": [
         "f414b1d1-87d9-410d-8a00-9c751d7d627e"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-three-quarters",
-        "mobile_height": "four-fifty-height-hero--mobile",
+        "mobile_height": "image-height--mobile",
         "width": "wrapper--full",
         "transition": "slide",
         "show_arrows": true,
@@ -58,7 +59,7 @@
             "show_overlay_text": true,
             "title": "Award-winning SPF for skincare lovers.",
             "heading_size": 8,
-            "description": "",
+            "description": "Award-winning SPF for skincare lovers.",
             "text_size": 5,
             "flex_align": "align--top-left",
             "bg_color": "",
