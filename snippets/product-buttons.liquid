@@ -4,7 +4,8 @@
   assign show_quantity = show_quantity | default: block.settings.show_quantity | default: false
 
   assign button_text = 'products.product.add_to_cart' | t
-  if is_preorder
+  if product.tags contains '_preorder' or product.metafields.theme.preorder.value
+    assign is_preorder = true 
     assign button_text =  'products.product.pre_order' | t
   endif
 
@@ -81,7 +82,9 @@
       {%- if gift_card_recipient_feature_active -%}
         {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
       {%- endif -%}
-
+      {% if is_preorder %}
+        <input form="{{ product_form_id }}" type="hidden" data-product-preorder name="properties[{{ 'products.product.sale_type' | t }}]" value="{{ 'products.product.pre_order' | t }}">
+      {% endif %}
       <div class="product__submit{% if buybutton_setting %} product__submit--spb{% endif %}"
         {% if animation_name %}
           data-animation="{{ animation_name }}"
@@ -100,7 +103,7 @@
               class="btn btn--primary {{ btn_atc_class }}"
               data-add-to-cart
               {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-              <span class="btn__text" data-add-to-cart-text>{{ button_text }}</span>
+              <span class="btn__text">{{ button_text }}</span>
               <span class="btn__added">&nbsp;</span>
 
               <span class="btn__loader">
