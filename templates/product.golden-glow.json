@@ -21,10 +21,9 @@
         },
         "90f57bd6-4319-4f33-8ea8-6dfedeb3b1f3": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "title": "",
-            "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>",
+            "text": "<p><em>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/em><\/p>",
             "padding_bottom": 10
           }
         },
@@ -33,7 +32,7 @@
           "settings": {
             "padding_bottom": 16,
             "color_sale": "#ffffff",
-            "bg_sale": "#a290b7"
+            "bg_sale": "#ff81f5"
           }
         },
         "variants": {
@@ -48,14 +47,8 @@
           "type": "text",
           "settings": {
             "title": "",
-            "text": "{{ product.metafields.custom.promotion_text | metafield_tag }}",
+            "text": "<p>{{ product.metafields.custom.promotion_text | metafield_tag }}<\/p>",
             "padding_bottom": 16
-          }
-        },
-        "3fa3c17a-a569-4a6a-a2b0-af427002396b": {
-          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
-          "settings": {
-            "product": "{{product}}"
           }
         },
         "buttons": {
@@ -65,6 +58,13 @@
             "show_payment_button": false,
             "show_gift_card_recipient": false,
             "padding_bottom": 20
+          }
+        },
+        "3fa3c17a-a569-4a6a-a2b0-af427002396b": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
           }
         },
         "4b447ae6-3e83-4a71-ba59-00521189b9eb": {
@@ -194,8 +194,8 @@
         "price",
         "variants",
         "304f09b5-0771-4bb4-b90f-1e1bcc842967",
-        "3fa3c17a-a569-4a6a-a2b0-af427002396b",
         "buttons",
+        "3fa3c17a-a569-4a6a-a2b0-af427002396b",
         "4b447ae6-3e83-4a71-ba59-00521189b9eb",
         "icon_2",
         "icon_1",
@@ -209,14 +209,81 @@
       ],
       "settings": {
         "product_sticky_enable": false,
-        "image_layout": "grid-2",
+        "image_layout": "grid-1",
         "image_size": "normal",
         "show_cart_bar": false,
         "enable_zoom": true,
         "enable_video_looping": false,
         "mobile_image_style": "thumbs",
-        "padding_top": 40,
+        "padding_top": 60,
         "padding_bottom": 40
+      }
+    },
+    "8a12e89f-c98b-4dc9-8064-fec072736a7b": {
+      "type": "section-custom-content",
+      "blocks": {
+        "template--16797189112066__8a12e89f-c98b-4dc9-8064-fec072736a7b-text-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Custom content",
+            "heading_size": 7,
+            "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.<\/p>",
+            "use_content_via_metafield": false,
+            "metafield_key": "",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": ""
+          }
+        },
+        "df5d8b90-4727-40b0-8096-84e4fda151e2": {
+          "type": "video",
+          "settings": {
+            "external_video_url_metafield": "",
+            "show_video_popup": false,
+            "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "Video",
+            "heading_size": 7,
+            "description": "Tell your brand's story through images.",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "bg_color": "",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--16797189112066__8a12e89f-c98b-4dc9-8064-fec072736a7b-text-1",
+        "df5d8b90-4727-40b0-8096-84e4fda151e2"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "custom": {
@@ -227,11 +294,11 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
-            "title": "{{ product.metafields.custom.best_bits_title_.value }}",
-            "heading_size": 6,
-            "text": "",
-            "use_content_via_metafield": true,
-            "metafield_key": "custom_sections_items",
+            "title": "What you'll love",
+            "heading_size": 8,
+            "text": "<h5><em><strong>Green Tea Extract<\/strong><\/em><\/h5><h5><br\/>Rich in Vitamin B to help boost collagen, firming, anti-inflammatory, stimulates circulation<br\/><br\/><em><strong>Vitamin E<\/strong><\/em><\/h5><h5><br\/>Moisturising, Deeply hydrating, Can help combat free radical damage<\/h5>",
+            "use_content_via_metafield": false,
+            "metafield_key": "",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -246,14 +313,13 @@
             "color": "#212121"
           }
         },
-        "316707c6-06b5-43c7-9f67-9c7486a399f7": {
+        "2f298408-b44f-4007-a4a1-ca9e73591949": {
           "type": "video",
           "settings": {
-            "video": "{{ product.metafields.custom.best_bits_video_.value }}",
+            "video": "shopify:\/\/files\/videos\/WhatsApp Video 2022-07-15 at 12.46.09 PM (1).mp4",
             "external_video_url_metafield": "",
             "show_video_popup": false,
-            "video_popup_social": "",
-            "image": "{{ product.metafields.custom.best_bits_video_.value }}",
+            "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -275,11 +341,75 @@
       },
       "block_order": [
         "custom-1",
-        "316707c6-06b5-43c7-9f67-9c7486a399f7"
+        "2f298408-b44f-4007-a4a1-ca9e73591949"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c06509f8-796d-4831-b2d8-01d864f81fb6": {
+      "type": "section-custom-content",
+      "blocks": {
+        "1fbdb6d6-5140-46f7-84d1-4937baec1650": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CabanaGlow-edit-6-retouch.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "b8e4b22d-b518-4c8d-9c64-9784004e9a72": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "How To Use",
+            "heading_size": 7,
+            "text": "<ul><li><em>Choose a CabanaGlow to match your mood and complexion<\/em><\/li><\/ul><p><\/p><ul><li><em>Add a few drops of \"Bronze\" for added sun-kissed shade and build intensity as per your personal preference <\/em><\/li><\/ul><p><\/p><ul><li><em>Use total of 1\/4 teaspoon <\/em><\/li><\/ul><p><\/p><ul><li><em>Be sure to top up your SPF every 90 minutes when outdoors<\/em><\/li><\/ul><p><\/p><ul><li><em>Can be used under makeup or on its own!<\/em><\/li><\/ul>",
+            "use_content_via_metafield": false,
+            "metafield_key": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#f5edff",
+            "color": "#212121"
+          }
+        }
+      },
+      "block_order": [
+        "1fbdb6d6-5140-46f7-84d1-4937baec1650",
+        "b8e4b22d-b518-4c8d-9c64-9784004e9a72"
       ],
       "disabled": true,
       "settings": {
-        "height": "screen-height-full",
+        "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "borders": false,
@@ -428,6 +558,7 @@
     },
     "eb460dee-3ca0-431b-b7b4-54c53de5bd9e": {
       "type": "section-before-after",
+      "disabled": true,
       "settings": {
         "heading": "{{ product.metafields.custom.before_after_title_.value }}",
         "description": "{{ product.metafields.custom.before_after_content_ | metafield_tag }}",
@@ -643,7 +774,9 @@
   },
   "order": [
     "main",
+    "8a12e89f-c98b-4dc9-8064-fec072736a7b",
     "custom",
+    "c06509f8-796d-4831-b2d8-01d864f81fb6",
     "c972e37c-91d1-4656-8552-7d50e8d6bd33",
     "2cbac4d4-1a59-4447-aeee-ec774bcbca58",
     "eb460dee-3ca0-431b-b7b4-54c53de5bd9e",

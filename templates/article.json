@@ -6,11 +6,13 @@
         "related-products": {
           "type": "related",
           "settings": {
+            "title": "Related products"
           }
         },
         "recent-articles": {
           "type": "recent",
           "settings": {
+            "title": "Recent articles"
           }
         }
       },
@@ -19,6 +21,18 @@
         "recent-articles"
       ],
       "settings": {
+        "show_image": true,
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-third--mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_date": true,
+        "show_author": false,
+        "tags": false,
+        "show_sharing": false,
+        "arrows": false,
+        "padding_top": 0,
+        "padding_bottom": 50
       }
     }
   },

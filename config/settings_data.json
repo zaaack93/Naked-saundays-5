@@ -6,7 +6,7 @@
     "accent_bright": "#ffdcfc",
     "link_color": "#212121",
     "site_border_color": "#f8f7fa",
-    "sale_color": "#b65cae",
+    "sale_color": "#303030",
     "high_contrast": false,
     "header_bg": "#ffffff",
     "header_link": "#212121",
@@ -29,7 +29,7 @@
     "btn_font": "avenir_next_n4",
     "btn_border_style": "pill",
     "btn_letter_spacing": 125,
-    "btn_primary_bg_color": "#be8ff9",
+    "btn_primary_bg_color": "#d5b8f9",
     "btn_primary_text_color": "#ffffff",
     "btn_primary_border_color": "#212121",
     "btn_secondary_bg_color": "#d5b8f9",
@@ -69,6 +69,7 @@
     "sale_badge": true,
     "swatch_style": "circle",
     "favicon": "shopify:\/\/shop_images\/NakedSundays-Logo_MultiColor_1997x_ceace983-9ddf-462c-bb09-e14ad59fac54.png",
+    "enable_cart_dropdown": false,
     "enable_gift_notes": false,
     "enable_additional_buttons": false,
     "show_free_shipping_message": true,
@@ -78,6 +79,7 @@
     "cart_custom_message_text": "",
     "show_empty_cart_menu": true,
     "empty_cart_menu": "cart-menu",
+    "free_gift_limit": "",
     "collection": "free-gift",
     "link_hover_color": "#bcb2a8",
     "header_link_hover": "#AB8C52",
@@ -111,6 +113,41 @@
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
+        }
+      },
+      "6610233760104865948": {
+        "type": "shopify:\/\/apps\/pushowl\/blocks\/pushowl-app-embed-3d2ff2b5\/fa20c3ba-38bf-43e0-ba5c-431f6ae07d95",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "5149645339031002760": {
+        "type": "shopify:\/\/apps\/order-limits-minmaxify\/blocks\/app-embed-block\/3acfba32-89f3-4377-ae20-cbb9abc48475",
+        "disabled": false,
+        "settings": {
+          "async": false
+        }
+      },
+      "1173261918193615741": {
+        "type": "shopify:\/\/apps\/geo-pro-geolocation-redirects\/blocks\/geopro\/16fc5313-7aee-4e90-ac95-f50fc7c8b657",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "17151115064775110295": {
+        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
+        "disabled": false,
+        "settings": {
+          "color_brand": "#467C99",
+          "contrast_color": "#FFFFFF",
+          "color_brand_secondary": "#467C99",
+          "corners": "8px",
+          "app_background": "#f9f8f4",
+          "app_container": 1200,
+          "app_vertical_padding": 32,
+          "images_aspect_ratio": "1",
+          "cards_background": "#FFFFFF",
+          "cards_border_color": "rgba(0,0,0,0)"
         }
       }
     }
