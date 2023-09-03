@@ -1,6 +1,41 @@
 
 .slideshow-v2{
     @media only screen and (max-width: 749px){
+        .align--left {
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+            .hero__button-group{
+                justify-content:flex-start;
+              }
+          }
+          
+          .align--center {
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            .hero__button-group{
+                justify-content:center;
+              }
+          }
+          
+          .align--right {
+            align-items: flex-start;
+            justify-content: flex-end;
+            text-align: right;
+            .hero__button-group{
+                justify-content:flex-end;
+              }
+          }
+          
+          .hero__button-group{
+            .hero__button {
+                margin-left:0px ;
+                margin-right: 0px;
+            }
+          }
+
+
         .desktop {
             display: none !important;
         }
@@ -27,7 +62,7 @@
                         // font-weight: 500;
                         // font-size: 26px;
                         // line-height: 35px;
-                        text-align: center;
+                        text-align: inherit;
                         color: #000000;
                         margin-bottom: 0px;
                         h
@@ -46,7 +81,7 @@
                         // font-weight: 400;
                         // font-size: 15px;
                         // line-height: 24px;
-                        text-align: center;
+                        text-align: inherit;
                         color: #000000;
                     }
                     .hero__button-group{
