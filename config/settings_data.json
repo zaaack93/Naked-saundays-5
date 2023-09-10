@@ -79,7 +79,7 @@
     "cart_custom_message_text": "",
     "show_empty_cart_menu": true,
     "empty_cart_menu": "cart-menu",
-    "free_gift_limit": "10",
+    "free_gift_limit": "60",
     "collection": "free-gift",
     "link_hover_color": "#bcb2a8",
     "header_link_hover": "#AB8C52",

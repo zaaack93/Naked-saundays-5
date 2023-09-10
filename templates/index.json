@@ -1,5 +1,54 @@
 {
   "sections": {
+    "83124b63-b0c1-4821-b31e-281e19325e9a": {
+      "type": "section-hero",
+      "blocks": {
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "It's World Makeup Day",
+            "heading_size": 8
+          }
+        },
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-text-1": {
+          "type": "text",
+          "settings": {
+            "description": "FREE SPF50 Glow Balm every purchase $60+ TODAY ONLY!",
+            "text_size": 5,
+            "text_style": "font-heading"
+          }
+        },
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-button-1": {
+          "type": "button",
+          "settings": {
+            "link_text": "SHOP ALL",
+            "link": "shopify:\/\/collections\/all",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-heading-1",
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-text-1",
+        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-button-1"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/NEW__NS.png",
+        "image_2": "shopify:\/\/shop_images\/tali-cherry_copy.jpg",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align": "align--bottom-center",
+        "overlay_opacity": 35,
+        "overlay_color": "#000000",
+        "show_overlay_text": true,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
     "fd49954c-cda8-4fbc-ba64-e29bcf47d6cf": {
       "type": "section-slideshow-v2",
       "blocks": {
@@ -16,6 +65,7 @@
             "description": "FREE SPF50 Coconut Lip Oil with EVERY Purchase",
             "text_size": 5,
             "flex_align": "align--top-left",
+            "flex_align_mobile": "align--center",
             "bg_color": "",
             "color": "#ffffff",
             "first_button_text": "SHOP NOW",
@@ -36,6 +86,7 @@
       "block_order": [
         "62dec9c9-23ad-479f-a08b-012711a64e3b"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-full",
         "mobile_height": "image-height--mobile",
@@ -231,56 +282,6 @@
         "show_arrows": true,
         "autoplay": false,
         "autoplay_speed": 8
-      }
-    },
-    "83124b63-b0c1-4821-b31e-281e19325e9a": {
-      "type": "section-hero",
-      "blocks": {
-        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-heading-1": {
-          "type": "heading",
-          "settings": {
-            "title": "NEW! SPF50 Lip Oils",
-            "heading_size": 11
-          }
-        },
-        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-text-1": {
-          "type": "text",
-          "settings": {
-            "description": "World First SPF-infused lip oils are here!",
-            "text_size": 5,
-            "text_style": "font-heading"
-          }
-        },
-        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-button-1": {
-          "type": "button",
-          "settings": {
-            "link_text": "SHOP THE LIP COLLECTION",
-            "link": "shopify:\/\/collections\/lip-oil-collection",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-heading-1",
-        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-text-1",
-        "template--16786981323010__83124b63-b0c1-4821-b31e-281e19325e9a-button-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-three-quarters",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/tali-cherry_copy.jpg",
-        "image_2": "shopify:\/\/shop_images\/14.png",
-        "mobile_height": "screen-height-one-half--mobile",
-        "flex_align": "align--bottom-center",
-        "overlay_opacity": 30,
-        "overlay_color": "#000000",
-        "show_overlay_text": true,
-        "bg_color": "",
-        "color": "#ffffff"
       }
     },
     "logos": {
@@ -621,6 +622,7 @@
             "description": "Get Lit-From-Within Skin\nWith World First SPF50-powered Bronze & Illuminating Serum Drops",
             "text_size": 6,
             "flex_align": "align--top-center",
+            "flex_align_mobile": "align--center",
             "bg_color": "",
             "color": "#ffffff",
             "first_button_text": "SHOP CABANAGLOWS",
@@ -649,6 +651,7 @@
             "description": "",
             "text_size": 5,
             "flex_align": "align--middle-center",
+            "flex_align_mobile": "align--center",
             "bg_color": "",
             "color": "#ffffff",
             "first_button_text": "View products",
@@ -683,12 +686,12 @@
     }
   },
   "order": [
+    "83124b63-b0c1-4821-b31e-281e19325e9a",
     "fd49954c-cda8-4fbc-ba64-e29bcf47d6cf",
     "a05a9ad7-3143-416c-a3c0-6c5d2fabdcf8",
     "f4c05f15-1150-4673-bda8-90fb3bb0e155",
     "9457ff80-1865-48c2-b163-cc1304a9431b",
     "slideshow",
-    "83124b63-b0c1-4821-b31e-281e19325e9a",
     "logos",
     "e14f32e8-0f6b-4bae-b341-f5a7e9e7e90f",
     "featured-collection",

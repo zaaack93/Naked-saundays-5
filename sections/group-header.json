@@ -7,8 +7,21 @@
       "blocks": {
         "7baebcdf-7b37-407a-a964-c8c0a920a700": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>UPDATE: ILLUMINATING CabanaGlow SOLD OUT; PRE-ORDER the next drop!! <\/p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "c93da064-6218-4956-9c6d-1239d76942cc": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>FREE SPF50 Glow Balm with orders $60+ (Today Only!) <\/strong><\/p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -19,7 +32,8 @@
         }
       },
       "block_order": [
-        "7baebcdf-7b37-407a-a964-c8c0a920a700"
+        "7baebcdf-7b37-407a-a964-c8c0a920a700",
+        "c93da064-6218-4956-9c6d-1239d76942cc"
       ],
       "settings": {
         "layout": "slider",
