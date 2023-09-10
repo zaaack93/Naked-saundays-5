@@ -891,6 +891,12 @@
       },
       {
         "type": "checkbox",
+        "id": "enable_cart_upsel",
+        "label": "Enable cart upsell",
+        "default": false
+      },
+      {
+        "type": "checkbox",
         "id": "enable_additional_buttons",
         "label": "Enable additional checkout buttons",
         "default": false
